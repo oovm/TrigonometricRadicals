@@ -2,12 +2,10 @@
 
 $$
 \begin{aligned}
-\sin 22°&=-\frac{1}{8} \omega ^{1/3} \left(\left(-1+\sqrt{5}\right) \left(1+\omega ^{1/3}\right)-2 i \sqrt{2} 5^{1/4} \left(-1+\omega ^{1/3}\right) \sqrt{\alpha
-_2}\right)\\
-\cos 22°&=\frac{1}{8} \omega ^{1/3} \left(i \left(-1+\sqrt{5}\right) \left(-1+\omega ^{1/3}\right)+2 \sqrt{2} 5^{1/4} \left(1+\omega ^{1/3}\right) \sqrt{\alpha
-_2}\right)\\
-\tan 22°&=\frac{16 i \left(-1+\sqrt{5}\right) \left(1+\omega ^{1/3}\right)+32 \sqrt{2} 5^{1/4} \left(-1+\omega ^{1/3}\right) \sqrt{\alpha _2}}{16 \left(\left(-1+\sqrt{5}\right)
-\left(-1+\omega ^{1/3}\right)-2 i \sqrt{2} 5^{1/4} \left(1+\omega ^{1/3}\right) \sqrt{\alpha _2}\right)}\\
+\sin 22°&=-\frac{1}{4} \omega ^{1/3} \left(2 \left(1+\omega ^{1/3}\right) \alpha _1-i \sqrt{2} 5^{1/4} \left(-1+\omega ^{1/3}\right) \sqrt{\alpha _2}\right)\\
+\cos 22°&=\frac{1}{4} \omega ^{1/3} \left(2 i \left(-1+\omega ^{1/3}\right) \alpha _1+\sqrt{2} 5^{1/4} \left(1+\omega ^{1/3}\right) \sqrt{\alpha _2}\right)\\
+\tan 22°&=\frac{2 i \left(1+\omega ^{1/3}\right) \alpha _1+\sqrt{2} 5^{1/4} \left(-1+\omega ^{1/3}\right) \sqrt{\alpha _2}}{2 \left(-1+\omega ^{1/3}\right)
+\alpha _1-i \sqrt{2} 5^{1/4} \left(1+\omega ^{1/3}\right) \sqrt{\alpha _2}}\\
 \end{aligned}
 $$
 
