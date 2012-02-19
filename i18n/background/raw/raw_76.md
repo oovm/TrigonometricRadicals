@@ -1,0 +1,13 @@
+#### 76°
+
+$$
+\begin{aligned}
+\sin 76°&=\frac{1}{8} \omega ^{1/3} \left(i \left(1+\sqrt{5}\right) \left(-1+\omega ^{1/3}\right)+2 \sqrt{2} \sqrt[4]{5} \left(1+\omega ^{1/3}\right) \sqrt{\alpha
+_1}\right)\\
+\cos 76°&=\frac{1}{8} \omega ^{1/3} \left(\left(1+\sqrt{5}\right) \left(1+\omega ^{1/3}\right)-2 i \sqrt{2} \sqrt[4]{5} \left(-1+\omega ^{1/3}\right) \sqrt{\alpha
+_1}\right)\\
+\tan 76°&=\frac{i \left(1+\sqrt{5}\right) \left(-1+\omega ^{1/3}\right)+2 \sqrt{2} \sqrt[4]{5} \left(1+\omega ^{1/3}\right) \sqrt{\alpha _1}}{\left(1+\sqrt{5}\right)
+\left(1+\omega ^{1/3}\right)-2 i \sqrt{2} \sqrt[4]{5} \left(-1+\omega ^{1/3}\right) \sqrt{\alpha _1}}\\
+\end{aligned}
+$$
+
