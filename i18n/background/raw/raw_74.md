@@ -2,12 +2,10 @@
 
 $$
 \begin{aligned}
-\sin 74°&=-\frac{1}{8} \omega ^{4/3} \left(\left(1+\sqrt{5}\right) \left(1+\omega ^{4/3}\right)-2 i \sqrt{2} \sqrt[4]{5} \left(-1+\omega ^{4/3}\right) \sqrt{\alpha
-_1}\right)\\
-\cos 74°&=-\frac{1}{8} i \omega ^{4/3} \left(\left(1+\sqrt{5}\right) \left(-1+\omega ^{4/3}\right)-2 i \sqrt{2} \sqrt[4]{5} \left(1+\omega ^{4/3}\right) \sqrt{\alpha
-_1}\right)\\
-\tan 74°&=\frac{-i \left(1+\sqrt{5}\right) \left(1+\omega ^{4/3}\right)-2 \sqrt{2} \sqrt[4]{5} \left(-1+\omega ^{4/3}\right) \sqrt{\alpha _1}}{\left(1+\sqrt{5}\right)
-\left(-1+\omega ^{4/3}\right)-2 i \sqrt{2} \sqrt[4]{5} \left(1+\omega ^{4/3}\right) \sqrt{\alpha _1}}\\
+\sin 74°&=\frac{1}{4} \omega ^{4/3} \left(i \sqrt{2} \sqrt[4]{5} \left(-1+\omega ^{4/3}\right) \sqrt{\alpha _1}-2 \left(1+\omega ^{4/3}\right) \alpha _2\right)\\
+\cos 74°&=-\frac{1}{4} \omega ^{4/3} \left(\sqrt{2} \sqrt[4]{5} \left(1+\omega ^{4/3}\right) \sqrt{\alpha _1}+2 i \left(-1+\omega ^{4/3}\right) \alpha _2\right)\\
+\tan 74°&=\frac{-i \sqrt{2} \sqrt[4]{5} \left(-1+\omega ^{4/3}\right) \sqrt{\alpha _1}+2 \left(1+\omega ^{4/3}\right) \alpha _2}{\sqrt{2} \sqrt[4]{5} \left(1+\omega
+^{4/3}\right) \sqrt{\alpha _1}+2 i \left(-1+\omega ^{4/3}\right) \alpha _2}\\
 \end{aligned}
 $$
 
