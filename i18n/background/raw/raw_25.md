@@ -2,9 +2,9 @@
 
 $$
 \begin{aligned}
-\sin 25°&=-\frac{1}{2} (-1)^{1/4} \omega ^{4/3} \left(-i+\omega ^{4/3}\right)\\
+\sin 25°&=\frac{\left(\frac{1}{2}+\frac{i}{2}\right) \omega ^{4/3} \left(i-\omega ^{4/3}\right)}{\sqrt{2}}\\
 \cos 25°&=\frac{1}{2} (-1)^{3/4} \omega ^{4/3} \left(i+\omega ^{4/3}\right)\\
-\tan 25°&=i+\frac{2}{i+\omega ^{4/3}}\\
+\tan 25°&=-\frac{i \left(i-\omega ^{4/3}\right)}{i+\omega ^{4/3}}\\
 \end{aligned}
 $$
 
