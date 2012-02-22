@@ -2,10 +2,10 @@
 
 $$
 \begin{aligned}
-\sin 39°&=\frac{1}{4} \left(-\sqrt[4]{5} \left(-1+\sqrt{3}\right) \sqrt{\alpha _1}+2 \sqrt{2+\sqrt{3}} \alpha _2\right)\\
-\cos 39°&=\frac{1}{4} \left(\sqrt[4]{5} \left(1+\sqrt{3}\right) \sqrt{\alpha _1}+\sqrt{2} \left(-1+\sqrt{3}\right) \alpha _2\right)\\
-\tan 39°&=\frac{-\sqrt[4]{5} \left(-1+\sqrt{3}\right) \sqrt{\alpha _1}+2 \sqrt{2+\sqrt{3}} \alpha _2}{\sqrt[4]{5} \left(1+\sqrt{3}\right) \sqrt{\alpha _1}+\sqrt{2}
-\left(-1+\sqrt{3}\right) \alpha _2}\\
+\sin 39°&=\frac{1}{4} \left(\sqrt[4]{5} \left(1-\sqrt{3}\right) \sqrt{\alpha _1}+2 \sqrt{2+\sqrt{3}} \alpha _2\right)\\
+\cos 39°&=\frac{1}{4} \left(\sqrt[4]{5} \left(1+\sqrt{3}\right) \sqrt{\alpha _1}-\sqrt{2} \left(1-\sqrt{3}\right) \alpha _2\right)\\
+\tan 39°&=\frac{\sqrt[4]{5} \left(1-\sqrt{3}\right) \sqrt{\alpha _1}+2 \sqrt{2+\sqrt{3}} \alpha _2}{\sqrt[4]{5} \left(1+\sqrt{3}\right) \sqrt{\alpha _1}-\sqrt{2}
+\left(1-\sqrt{3}\right) \alpha _2}\\
 \end{aligned}
 $$
 

@@ -2,9 +2,9 @@
 
 $$
 \begin{aligned}
-\sin 51°&=\frac{1}{4} \left(\sqrt[4]{5} \left(1+\sqrt{3}\right) \sqrt{\alpha _1}+\sqrt{2} \left(-1+\sqrt{3}\right) \alpha _2\right)\\
-\cos 51°&=\frac{1}{4} \left(-\sqrt[4]{5} \left(-1+\sqrt{3}\right) \sqrt{\alpha _1}+2 \sqrt{2+\sqrt{3}} \alpha _2\right)\\
-\tan 51°&=\frac{\sqrt[4]{5} \left(1+\sqrt{3}\right) \sqrt{\alpha _1}+\sqrt{2} \left(-1+\sqrt{3}\right) \alpha _2}{-\sqrt[4]{5} \left(-1+\sqrt{3}\right) \sqrt{\alpha
+\sin 51°&=\frac{1}{4} \left(\sqrt[4]{5} \left(1+\sqrt{3}\right) \sqrt{\alpha _1}-\sqrt{2} \left(1-\sqrt{3}\right) \alpha _2\right)\\
+\cos 51°&=\frac{1}{4} \left(\sqrt[4]{5} \left(1-\sqrt{3}\right) \sqrt{\alpha _1}+2 \sqrt{2+\sqrt{3}} \alpha _2\right)\\
+\tan 51°&=\frac{\sqrt[4]{5} \left(1+\sqrt{3}\right) \sqrt{\alpha _1}-\sqrt{2} \left(1-\sqrt{3}\right) \alpha _2}{\sqrt[4]{5} \left(1-\sqrt{3}\right) \sqrt{\alpha
 _1}+2 \sqrt{2+\sqrt{3}} \alpha _2}\\
 \end{aligned}
 $$
