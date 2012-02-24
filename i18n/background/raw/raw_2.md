@@ -2,10 +2,10 @@
 
 $$
 \begin{aligned}
-\sin 2°&=\frac{1}{4} \omega ^{4/3} \left(2 \left(1+\omega ^{4/3}\right) \alpha _1-i \sqrt{2} \sqrt[4]{5} \left(1-\omega ^{4/3}\right) \sqrt{\alpha _2}\right)\\
-\cos 2°&=-\frac{1}{4} \omega ^{4/3} \left(2 i \left(1-\omega ^{4/3}\right) \alpha _1+\sqrt{2} \sqrt[4]{5} \left(1+\omega ^{4/3}\right) \sqrt{\alpha _2}\right)\\
-\tan 2°&=\frac{-2 \left(1+\omega ^{4/3}\right) \alpha _1+i \sqrt{2} \sqrt[4]{5} \left(1-\omega ^{4/3}\right) \sqrt{\alpha _2}}{2 i \left(1-\omega ^{4/3}\right)
-\alpha _1+\sqrt{2} \sqrt[4]{5} \left(1+\omega ^{4/3}\right) \sqrt{\alpha _2}}\\
+\sin 2°&=-\frac{1}{4} \alpha _1^{4/3} \left(\sqrt{2} \sqrt[4]{5} \left(1-\alpha _1^{4/3}\right) \sqrt{\beta _2}-2 \left(1+\alpha _1^{4/3}\right) \beta _4\right)\\
+\cos 2°&=\frac{1}{4} i \alpha _1^{4/3} \left(\sqrt{2} \sqrt[4]{5} \left(1+\alpha _1^{4/3}\right) \sqrt{\beta _2}-2 \left(1-\alpha _1^{4/3}\right) \beta _4\right)\\
+\tan 2°&=\frac{i \left(\sqrt{2} \sqrt[4]{5} \left(1-\alpha _1^{4/3}\right) \sqrt{\beta _2}-2 \left(1+\alpha _1^{4/3}\right) \beta _4\right)}{\sqrt{2} \sqrt[4]{5}
+\left(1+\alpha _1^{4/3}\right) \sqrt{\beta _2}-2 \left(1-\alpha _1^{4/3}\right) \beta _4}\\
 \end{aligned}
 $$
 
