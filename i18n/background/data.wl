@@ -105,5 +105,26 @@
 		HoldForm[-1],
 		HoldForm[A[4, 1]],
 		HoldForm[A[2, 1]]
+	},
+	16 -> {
+		HoldForm[-(Sqrt[2] / 4) (A[1, 3 / 4] (I Sqrt[2]  B[2, 1] + 5^(1 / 4) B[4, 2]) - A[3, 3 / 4] (I Sqrt[2]  B[2, 1] - 5^(1 / 4) B[4, 2]))],
+		HoldForm[+ ( Sqrt[2] / (4I)) (A[1, 3 / 4] (I Sqrt[2] B[2, 1] + 5^(1 / 4) B[4, 2]) + A[3, 3 / 4] (I Sqrt[2] B[2, 1] - 5^(1 / 4) B[4, 2]))],
+		HoldForm[1 / I],
+		HoldForm[A[1, 3 / 4] (I Sqrt[2]  B[2, 1] + 5^(1 / 4) B[4, 2]) - A[3, 3 / 4] (I Sqrt[2]  B[2, 1] - 5^(1 / 4) B[4, 2])],
+		HoldForm[A[1, 3 / 4] (I Sqrt[2] B[2, 1] + 5^(1 / 4) B[4, 2]) + A[3, 3 / 4] (I Sqrt[2] B[2, 1] - 5^(1 / 4) B[4, 2])]
+	},
+	17 -> {
+		HoldForm[(1 / 4 + I / 4) (A[1, 3] A[3, 1] (5^(1 / 4) B[2, 2] - Sqrt[2] B[4, 1]) + I A[1, 1] A[3, 3] (5^(1 / 4) B[2, 2] + Sqrt[2] B[4, 1]))],
+		HoldForm[(1 / 4 - I / 4) (A[1, 3] A[3, 1] (5^(1 / 4) B[2, 2] - Sqrt[2] B[4, 1]) - I A[1, 1] A[3, 3] (5^(1 / 4) B[2, 2] + Sqrt[2] B[4, 1]))],
+		HoldForm[I],
+		HoldForm[A[1, 3] A[3, 1] (5^(1 / 4) B[2, 2] - Sqrt[2] B[4, 1]) + I A[1, 1] A[3, 3] (5^(1 / 4) B[2, 2] + Sqrt[2] B[4, 1])],
+		HoldForm[A[1, 3] A[3, 1] (5^(1 / 4) B[2, 2] - Sqrt[2] B[4, 1]) - I A[1, 1] A[3, 3] (5^(1 / 4) B[2, 2] + Sqrt[2] B[4, 1])]
+	},
+	18 -> {
+		HoldForm[Sqrt[3 / 8 - Sqrt[5] / 8]],
+		HoldForm[Sqrt[5 / 8 + Sqrt[5] / 8]],
+		HoldForm[1],
+		HoldForm[Sqrt[1 - 2 / Sqrt[5]]],
+		HoldForm[1]
 	}
 |>
