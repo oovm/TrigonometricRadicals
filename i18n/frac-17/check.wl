@@ -4,11 +4,12 @@ Vieta[list_] := Block[
 	{l = Length[list]},
 	Table[Tr[Times @@ (list[[#]])& /@ Subsets[Range@l, {i}]], {i, 1, l}]
 ];
-solve[a_, b_, less_] := If[
-	less,
-	List[1 / 2 (a - Sqrt[a^2 - 4 b]), 1 / 2 (a + Sqrt[a^2 - 4 b])],
-	List[1 / 2 (a + Sqrt[a^2 - 4 b]), 1 / 2 (a - Sqrt[a^2 - 4 b])]
-];≈
+sumGroup[g_]:=Im@Sum[(-1.0)^(k / n), {k, g}];
+solve[a_, b_, lhs_, rhs_] := If[
+	sumGroup@lhs > sumGroup@rhs,
+	List[ (a - Sqrt[a^2 - 4 b])/2,  (a + Sqrt[a^2 - 4 b])/2],
+	List[ (a + Sqrt[a^2 - 4 b])/2,  (a - Sqrt[a^2 - 4 b])/2]
+];
 
 
 n = 17;p = 3;

@@ -93,10 +93,18 @@ $$
 \begin{aligned}
 \cos\frac{\pi}{7}&=+\frac{1}{6} \left(\sqrt[3]{\frac{7}{2} \left(-1+3 i \sqrt{3}\right)}+\sqrt[3]{\frac{7}{2} \left(-1-3 i \sqrt{3}\right)}+1\right)\\
 \cos\frac{2\pi}{7}&=+\frac{1}{6} \left(\sqrt[3]{\frac{7}{2} \left(+1+3 i \sqrt{3}\right)}+\sqrt[3]{\frac{7}{2} \left(+1-3 i \sqrt{3}\right)}-1\right)\\
-\cos\frac{3\pi}{7}&=-\frac{α^2β-αβ^2+αβ-7α+7β}{6αβ} \\
-\cos\frac{4\pi}{7}&=+\frac{α^2β-αβ^2+αβ-7α+7β}{6αβ} \\
+\cos\frac{3\pi}{7}&=-\frac{1}{6}\left((-1)^{1/3} \sqrt[3]{\frac{7}{2}\left(-1+3 i\sqrt{3}\right)}-(-1)^{2/3} \sqrt[3]{\frac{7}{2} \left(-1-3 i \sqrt{3}\right)}-1\right)\\
+\cos\frac{4\pi}{7}&=-\frac{1}{6}\left((-1)^{1/3} \sqrt[3]{\frac{7}{2} \left(+1+3 i \sqrt{3}\right)}-(-1)^{2/3} \sqrt[3]{\frac{7}{2} \left(+1-3 i \sqrt{3}\right)}+1\right)\\
 \cos\frac{5\pi}{7}&=-\frac{1}{6} \left(\sqrt[3]{\frac{7}{2} \left(+1+3 i \sqrt{3}\right)}+\sqrt[3]{\frac{7}{2} \left(+1-3 i \sqrt{3}\right)}-1\right)\\
 \cos\frac{6\pi}{7}&=-\frac{1}{6} \left(\sqrt[3]{\frac{7}{2} \left(-1+3 i \sqrt{3}\right)}+\sqrt[3]{\frac{7}{2} \left(-1-3 i \sqrt{3}\right)}+1\right)\\
 \end{aligned}
 $$
 
+其中
+
+$$
+\begin{aligned}
+(-1)^{1/3}&=+\frac{1}{2}+\frac{\sqrt{3}}{2} i\\
+(-1)^{2/3}&=-\frac{1}{2}+\frac{\sqrt{3}}{2} i\\
+\end{aligned}
+$$
