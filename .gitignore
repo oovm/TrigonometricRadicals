@@ -1,6 +1,14 @@
-.idea/
-*.iml
+# OS
+.DS_Store/
+
+# IDE
 .vscode/
 .vs/
+.idea/
+*.iml
 
-*.nb
+# Rust
+target/
+Cargo.lock
+time-travel.*
+dist/

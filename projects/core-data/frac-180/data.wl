@@ -1,6 +1,6 @@
 (* ::Package:: *)
 
-<|
+data = <|
 	1 -> {
 		HoldForm[(I - 1) / (4Sqrt[2])],
 		HoldForm[A[1, 1] A[3, 3] (I B[2, 1] - 5^(1 / 4) B[4, 2]) - I A[1, 3] A[3, 1] (I B[2, 1] + 5^(1 / 4) B[4, 2])],
@@ -26,10 +26,9 @@
 		HoldForm[A[1, 3] (B[2, 1] + I 5^(1 / 4) B[4, 2]) + A[3, 3] (B[2, 1] - I 5^(1 / 4) B[4, 2])]
 	},
 	5 -> {
-		HoldForm[(1 + I) / (2Sqrt[2])(A[1, 3] - I A[3, 3])],
-		HoldForm[(1 - I) / (2Sqrt[2])(A[1, 3] + I A[3, 3])],
-		I,
+		HoldForm[(1 + I ) / (2Sqrt[2])],
 		HoldForm[A[1, 3] - I A[3, 3]],
+		HoldForm[(1 - I ) / (2Sqrt[2])],
 		HoldForm[A[1, 3] + I A[3, 3]]
 	},
 	6 -> {

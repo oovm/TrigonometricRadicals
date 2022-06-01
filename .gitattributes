@@ -1,0 +1,5 @@
+*.m         linguist-language=mathematica
+builtin.rs  linguist-language=mathematica
+*.htm       linguist-detectable=false
+*.html      linguist-language=mathematica
+*.css       linguist-language=mathematica
