@@ -1,14 +1,14 @@
 (* ::Package:: *)
 
 Vieta[list_] := Block[
-	{l = Length[list]},
-	Table[Tr[Times @@ (list[[#]])& /@ Subsets[Range@l, {i}]], {i, 1, l}]
+    {l = Length[list]},
+    Table[Tr[Times @@ (list[[#]])& /@ Subsets[Range@l, {i}]], {i, 1, l}]
 ];
-sumGroup[g_]:=Im@Sum[(-1.0)^(k / n), {k, g}];
+sumGroup[g_] := Im@Sum[(-1.0)^(k / n), {k, g}];
 solve[a_, b_, lhs_, rhs_] := If[
-	sumGroup@lhs > sumGroup@rhs,
-	List[ (a - Sqrt[a^2 - 4 b])/2,  (a + Sqrt[a^2 - 4 b])/2],
-	List[ (a + Sqrt[a^2 - 4 b])/2,  (a - Sqrt[a^2 - 4 b])/2]
+    sumGroup@lhs > sumGroup@rhs,
+    List[ (a - Sqrt[a^2 - 4 b]) / 2, (a + Sqrt[a^2 - 4 b]) / 2],
+    List[ (a + Sqrt[a^2 - 4 b]) / 2, (a - Sqrt[a^2 - 4 b]) / 2]
 ];
 
 
@@ -42,17 +42,17 @@ period = 2^3;
 group = Table[PowerMod[p, Range[i, n - 2, period], n], {i, 0, period - 1}]
 vars = Table[orbit[cycle, i], {i, 0, period - 1}]
 isLess = Table[
-	Im@Sum[(-1.0)^(k / n), {k, First@group}] < Im@Sum[(-1.0)^(k / n), {k, Last@group}],
-	{group, Partition[group, 2]}
+    Im@Sum[(-1.0)^(k / n), {k, First@group}] < Im@Sum[(-1.0)^(k / n), {k, Last@group}],
+    {group, Partition[group, 2]}
 ]
 Flatten@Table[solve[orbit[cycle - 1, i], -1, True], {i, 0, 1}]
 
 
-(orbit[circle, i - 1]^2 - Subscript[\[Sigma], 3, i + 1] - 4) / 2
+(orbit[cycle, i - 1]^2 - Subscript[\[Sigma], 3, i + 1] - 4) / 2
 
 
-Sum[(-1.0)^(k / 17), {k, {9, 8}}]
-Sum[(-1.0)^(k / 17), {k, {10, 7}}]
+Sum[Exp[2 k Pi I / 17], {k, {9, 8}}]
+Sum[Exp[2 k Pi I / 17], {k, {10, 7}}]
 
 
 
