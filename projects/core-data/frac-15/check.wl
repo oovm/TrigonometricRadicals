@@ -1,12 +1,12 @@
 (* ::Package:: *)
 
-n=15;
+8System`TrigToRadicalsDump`cos[2Pi / 15] // Simplify // ExpandAll
+8System`TrigToRadicalsDump`cos[4Pi / 15] // Simplify // ExpandAll
+8System`TrigToRadicalsDump`cos[8Pi / 15] // Simplify // ExpandAll
+8System`TrigToRadicalsDump`cos[14Pi / 15] // Simplify // ExpandAll
 
+4Cos[6Pi / 15] // Simplify
+4Cos[12Pi / 15] // Simplify
 
-all=Sqrt[Table[(4 System`TrigToRadicalsDump`cos[i Pi/n])^2,{i,1,n-1}]//simplify]/4
+2Cos[10Pi / 15] // Simplify
 
-
-all//N
-
-
-Table[Cos[i Pi/n],{i,1,n-1}]//N
