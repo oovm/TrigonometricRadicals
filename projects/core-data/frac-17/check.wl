@@ -40,14 +40,21 @@ vars = Table[orbit[cycle, i], {i, 0, period - 1}]
 {1}
 
 
-StringRiffle[Table[TemplateApply["\[Omega]^{3^{`1`}}",i],{i,0,16}],"+"]
-%//uniclip
+texPower2[list_]:=StringRiffle[Table[TemplateApply["\[Omega]^{3^{`1`}}",i],{i,list}],"+"];
 
 
-TemplateApply["\[Sigma]^{`1`}(\[Zeta]_{`2`})",{0,1}]//uniclip
+texSigma[i_,j_]:=TemplateApply["\[Sigma]^{`1`}(\[Zeta]_{`2`})",{i,j}]
 
 
 texPower1[list_]:=StringRiffle[Table[TemplateApply["\[Omega]^{`1`}",i],{i,list}],"+"]
+
+
+texAligned[list_]:=TemplateApply["\
+\\begin{aligned}
+`1`
+\\end{aligned}",
+StringRiffle[list,"\\\\\n"]
+]
 
 
 (* ::Subsubsection:: *)
@@ -58,31 +65,58 @@ cycle = 1;
 period = 2;
 table = Table[PowerMod[p, Range[i, n - 2, period], n], {i, 0, period - 1}]
 vars = Table[orbit[cycle, i], {i, 0, period - 1}]
-solve[-1, -4, True]
 
 
-texPower1@table[[1]]
-
-
+TemplateApply["\[Zeta]_{`1`}=`2`", 
+{
+3,
+texPower2[Range[0,17,8]]
+}
+]
 %//uniclip
+
+
+texOrbit[cycle_,table_]:=texAligned@Table[
+StringRiffle[{texSigma[i,cycle],texPower1@table[[i+1]]},"&="],
+{i,0,period-1}
+]
+
+
+(* ::Subsubsection:: *)
+(*cycle2*)
 
 
 cycle = 2;
 period = 2^2;
-elemnets = Table[PowerMod[p, Range[i, n - 2, period], n], {i, 0, period - 1}]
+table = Table[PowerMod[p, Range[i, n - 2, period], n], {i, 0, period - 1}]
 vars = Table[orbit[cycle, i], {i, 0, period - 1}]
 Flatten@Table[solve[orbit[cycle - 1, i], -1, True], {i, 0, 2, 2}]
 
 
+texOrbit[cycle,table]
+%//uniclip
+
+
+(* ::Subsubsection:: *)
+(*cycle3*)
+
+
 cycle = 3;
 period = 2^3;
-group = Table[PowerMod[p, Range[i, n - 2, period], n], {i, 0, period - 1}]
+table = Table[PowerMod[p, Range[i, n - 2, period], n], {i, 0, period - 1}]
 vars = Table[orbit[cycle, i], {i, 0, period - 1}]
 isLess = Table[
     Im@Sum[(-1.0)^(k / n), {k, First@group}] < Im@Sum[(-1.0)^(k / n), {k, Last@group}],
     {group, Partition[group, 2]}
 ]
 Flatten@Table[solve[orbit[cycle - 1, i], -1, True], {i, 0, 1}]
+
+
+PowerMod[3,8,17]
+
+
+texOrbit[cycle,table]
+%//uniclip
 
 
 cycle = 4;
