@@ -208,14 +208,40 @@ $$
 
 $$
 \begin{aligned}
-σ_{0,0}=\\
-σ_{0,1}=\\
-σ_{1,1}=\\
-σ_{0,2}=\\
-σ_{1,2}=\\
-σ_{0,3}=\\
+σ_{0,0}&= -1\\
+σ_{0,1}&= \frac{-1+\sqrt{17}}{2}\\
+σ_{1,1}&= \frac{-1-\sqrt{17}}{2}\\
+σ_{0,2}&= \frac{1}{2} \left(\frac{-1+\sqrt{17}}{2}+\sqrt{\frac{17-\sqrt{17}}{2}}\right)\\
+σ_{1,2}&=\frac{1}{2} \left(\frac{-1-\sqrt{17}}{2}+\sqrt{\frac{17+\sqrt{17}}{2}}\right)\\
 \end{aligned}
 $$
 
 于是最终解得
 
+$$
+\begin{aligned}
+\cos\frac{2π}{17}&=+\frac{1}{8} \left(β+\sqrt[4]{17} \sqrt{β}+\sqrt{2} \sqrt{7+3 α -4 \sqrt[4]{17} \sqrt{α }+\sqrt{36-13 β}}\right) \\
+\cos\frac{4π}{17}&=+\frac{1}{8} \left(β-\sqrt[4]{17} \sqrt{β}+\sqrt{2} \sqrt{7+3 α +4 \sqrt[4]{17} \sqrt{α }-\sqrt{36-13 β}}\right) \\
+\cos\frac{6π}{17}&=-\frac{1}{8} \left(α -\sqrt[4]{17} \sqrt{α }-\sqrt{2} \sqrt{7-3 β+4 \sqrt[4]{17} \sqrt{β}-\sqrt{36+13 α }}\right) \\
+\cos\frac{8π}{17}&=+\frac{1}{8} \left(β+\sqrt[4]{17} \sqrt{β}-\sqrt{2} \sqrt{7+3 α -4 \sqrt[4]{17} \sqrt{α }+\sqrt{36-13 β}}\right) \\
+\cos\frac{10π}{17}&=-\frac{1}{8} \left(α -\sqrt[4]{17} \sqrt{α }+\sqrt{2} \sqrt{7-3 β+4 \sqrt[4]{17} \sqrt{β}-\sqrt{36+13 α }}\right) \\
+\cos\frac{12π}{17}&=-\frac{1}{8} \left(α +\sqrt[4]{17} \sqrt{α }-\sqrt{2} \sqrt{7-3 β-4 \sqrt[4]{17} \sqrt{β}+\sqrt{36+13 α }}\right) \\
+\cos\frac{14π}{17}&=-\frac{1}{8} \left(α +\sqrt[4]{17} \sqrt{α }+\sqrt{2} \sqrt{7-3 β-4 \sqrt[4]{17} \sqrt{β}+\sqrt{36+13 α }}\right) \\
+\cos\frac{16π}{17}&=+\frac{1}{8} \left(β-\sqrt[4]{17} \sqrt{β}-\sqrt{2} \sqrt{7+3 α +4 \sqrt[4]{17} \sqrt{α }-\sqrt{36-13 β}}\right) \\
+\end{aligned}
+$$
+
+where
+
+$$
+\begin{aligned}
+α &= \frac{\sqrt{17}+1}{2}\\
+β &= \frac{\sqrt{17}-1}{2}\\
+\end{aligned}
+$$
+
+最后 
+
+$$
+\sin\frac{π}{17}=\frac{1}{4} \sqrt{8-\sqrt{2 \sqrt{17}-2 \sqrt{34-2 \sqrt{17}}+2 \sqrt{12 \sqrt{17}+16 \sqrt{2 \sqrt{17}+34}+2 \sqrt{34-2 \sqrt{17}}-2 \sqrt{578-34 \sqrt{17}}+68}+30}}
+$$

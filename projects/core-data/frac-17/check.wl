@@ -2,15 +2,32 @@
 
 Needs["JLink`"];
 InstallJava[];
-LoadJavaClass["java.awt.Toolkit",AllowShortContext->False];
+LoadJavaClass["java.awt.Toolkit", AllowShortContext -> False];
 SetDirectory@NotebookDirectory[];
 
-uniclip[s_String]:=JavaBlock[java`awt`Toolkit`getDefaultToolkit[]@getSystemClipboard[]@setContents[#,#]&@JavaNew["java.awt.datatransfer.StringSelection",s]];
+uniclip[s_String] := JavaBlock[java`awt`Toolkit`getDefaultToolkit[]@getSystemClipboard[]@setContents[#, #]&@JavaNew["java.awt.datatransfer.StringSelection", s]];
 
 
 Simplify`TrigToRealRadicals;
-asTex[e_]:=StringTake[ExportString[e,"TeXFragment"],3;;-5];
-simplify[e_]:=FullSimplify[e,ComplexityFunction->(100 Count[#,Root[__]|Power[-1,___],All]+LeafCount[#]&)]
+asTex[e_] := StringTake[ExportString[e, "TeXFragment"], 3 ;; -5];
+simplify[e_] := FullSimplify[e, ComplexityFunction -> (100 Count[#, Root[__] | Power[-1, ___], All] + LeafCount[#]&)]
+
+
+texPower2[list_] := StringRiffle[Table[TemplateApply["\[Omega]^{3^{`1`}}", i], {i, list}], "+"];
+
+
+texSigma[i_, j_] := TemplateApply["\[Sigma]^{`1`}(\[Zeta]_{`2`})", {i, j}]
+
+
+texPower1[list_] := StringRiffle[Table[TemplateApply["\[Omega]^{`1`}", i], {i, list}], "+"]
+
+
+texAligned[list_] := TemplateApply["\
+\\begin{aligned}
+`1`
+\\end{aligned}",
+    StringRiffle[list, "\\\\\n"]
+]
 
 
 Vieta[list_] := Block[
@@ -35,26 +52,9 @@ PrimitiveRootList[n]
 
 cycle = 0;
 period = 2^cycle;
-table=Table[PowerMod[p, Range[i, n - 2, period], n], {i, 0, period - 1}]
+table = Table[PowerMod[p, Range[i, n - 2, period], n], {i, 0, period - 1}]
 vars = Table[orbit[cycle, i], {i, 0, period - 1}]
 {1}
-
-
-texPower2[list_]:=StringRiffle[Table[TemplateApply["\[Omega]^{3^{`1`}}",i],{i,list}],"+"];
-
-
-texSigma[i_,j_]:=TemplateApply["\[Sigma]^{`1`}(\[Zeta]_{`2`})",{i,j}]
-
-
-texPower1[list_]:=StringRiffle[Table[TemplateApply["\[Omega]^{`1`}",i],{i,list}],"+"]
-
-
-texAligned[list_]:=TemplateApply["\
-\\begin{aligned}
-`1`
-\\end{aligned}",
-StringRiffle[list,"\\\\\n"]
-]
 
 
 (* ::Subsubsection:: *)
@@ -67,18 +67,18 @@ table = Table[PowerMod[p, Range[i, n - 2, period], n], {i, 0, period - 1}]
 vars = Table[orbit[cycle, i], {i, 0, period - 1}]
 
 
-TemplateApply["\[Zeta]_{`1`}=`2`", 
-{
-3,
-texPower2[Range[0,17,8]]
-}
+TemplateApply["\[Zeta]_{`1`}=`2`",
+    {
+        3,
+        texPower2[Range[0, 17, 8]]
+    }
 ]
-%//uniclip
+% // uniclip
 
 
-texOrbit[cycle_,table_]:=texAligned@Table[
-StringRiffle[{texSigma[i,cycle],texPower1@table[[i+1]]},"&="],
-{i,0,period-1}
+texOrbit[cycle_, table_] := texAligned@Table[
+    StringRiffle[{texSigma[i, cycle], texPower1@table[[i + 1]]}, "&="],
+    {i, 0, period - 1}
 ]
 
 
@@ -93,8 +93,8 @@ vars = Table[orbit[cycle, i], {i, 0, period - 1}]
 Flatten@Table[solve[orbit[cycle - 1, i], -1, True], {i, 0, 2, 2}]
 
 
-texOrbit[cycle,table]
-%//uniclip
+texOrbit[cycle, table]
+% // uniclip
 
 
 (* ::Subsubsection:: *)
@@ -112,11 +112,11 @@ isLess = Table[
 Flatten@Table[solve[orbit[cycle - 1, i], -1, True], {i, 0, 1}]
 
 
-PowerMod[3,8,17]
+PowerMod[3, 8, 17]
 
 
-texOrbit[cycle,table]
-%//uniclip
+texOrbit[cycle, table]
+% // uniclip
 
 
 cycle = 4;
