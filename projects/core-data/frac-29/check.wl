@@ -2,21 +2,18 @@
 
 Simplify`TrigToRealRadicals;
 noSin[e_] := FullSimplify[e, ComplexityFunction -> (100 Count[#, Sin[__] | Power[-1, ___], All] + LeafCount[#]&)]
-System`TrigToRadicalsDump`cos[Pi / 11];
+System`TrigToRadicalsDump`cos[2Pi / 29];
 Vieta[list_] := Block[
     {l = Length[list]},
     Table[Tr[Times @@ (list[[#]])& /@ Subsets[Range@l, {i}]], {i, 1, l}]
 ];
 
 
-Clear[s]
-Solve[{Exp[2 s Pi I / 11] == E^((I \[Pi]) / 11), 0 < s < 11}, s]
+MinimalPolynomial[29Cos[2Pi/29],x]==0
 
 
-Clear[h, t]
-h = (n - 1) / 2;
-t = Table[Tr[\[Omega]^{k, n - k}] / 2, {k, 1, h}]
-Flatten[Transpose@{-Reverse@t, t}] // Expand
+root=29System`TrigToRadicalsDump`cos[2Pi / 29]//Simplify;
+one=First@Cases[root,Power[x___,1/7]:>x,Infinity];
 
 
 n = 15;p = 2;
