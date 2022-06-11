@@ -35,8 +35,8 @@ Vieta[list_] := Block[
     Table[Tr[Times @@ (list[[#]])& /@ Subsets[Range@l, {i}]], {i, 1, l}]
 ];
 sumGroup[g_] := Im@Sum[(-1.0)^(k / n), {k, g}];
-solve[a_, b_, lhs_, rhs_] := If[
-    sumGroup@lhs > sumGroup@rhs,
+solve[a_, b_, greater_] := If[
+    greater,
     List[ (a - Sqrt[a^2 - 4 b]) / 2, (a + Sqrt[a^2 - 4 b]) / 2],
     List[ (a + Sqrt[a^2 - 4 b]) / 2, (a - Sqrt[a^2 - 4 b]) / 2]
 ];
@@ -90,7 +90,6 @@ cycle = 2;
 period = 2^2;
 table = Table[PowerMod[p, Range[i, n - 2, period], n], {i, 0, period - 1}]
 vars = Table[orbit[cycle, i], {i, 0, period - 1}]
-Flatten@Table[solve[orbit[cycle - 1, i], -1, True], {i, 0, 2, 2}]
 
 
 texOrbit[cycle, table]
@@ -123,18 +122,12 @@ cycle = 4;
 period = 2^cycle;
 group = Table[PowerMod[p, Range[i, n - 2, period], n], {i, 0, period - 1}]
 vars = Table[orbit[cycle, i], {i, 0, period - 1}]
-isLess = Table[
-    Im@Sum[(-1.0)^(k / n), {k, First@group}] < Im@Sum[(-1.0)^(k / n), {k, Last@group}],
-    {group, Partition[group, 2]}
-]
-Flatten@Table[solve[orbit[cycle - 1, i], -1, True], {i, 0, 1}]
 
-
-(orbit[cycle, i - 1]^2 - Subscript[\[Sigma], 3, i + 1] - 4) / 2
-
-
-Sum[Exp[2 k Pi I / 17], {k, {9, 8}}]
-Sum[Exp[2 k Pi I / 17], {k, {10, 7}}]
-
-
-
+orbit[0, 2] = 1 / 4 (-1 + Sqrt[17] + Sqrt[2] Sqrt[17 - Sqrt[17]]);
+orbit[1, 2] = 1 / 4 (-1 - Sqrt[17] + Sqrt[2] Sqrt[17 + Sqrt[17]]);
+orbit[2, 2] = 1 / 4 (-1 + Sqrt[17] - Sqrt[2] Sqrt[17 - Sqrt[17]]);
+orbit[3, 2] = 1 / 4 (-1 - Sqrt[17] - Sqrt[2] Sqrt[17 + Sqrt[17]]);
+{cos2, cos8} = solve[orbit[0, 2], orbit[1, 2], False] / 2
+{cos6, cos10} = solve[orbit[1, 2], orbit[2, 2], False] / 2
+{cos4, cos16} = solve[orbit[2, 2], orbit[3, 2], False] / 2
+{cos12, cos14} = solve[orbit[3, 2], orbit[0, 2], False] / 2
