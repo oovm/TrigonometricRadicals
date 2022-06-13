@@ -1,23 +1,23 @@
 (* ::Package:: *)
 
-p=29;n=7;
-w=Exp[(n+1)Pi I/n];
-c={-1564,-1276 ,-1598 ,2182,1153,-898,2014};
-inner=Table[i j,{i,1,n-1},{j,0,n-1}];
-Mod[inner,n]
-Mod[n Log[w^inner]/(2Pi I),n]
+p = 29;n = 7;
+w = Exp[(n + 1)Pi I / n];
+c = {-1564, -1276 , -1598 , 2182, 1153, -898, 2014};
+inner = Table[i j, {i, 1, n - 1}, {j, 0, n - 1}];
+Mod[inner, n]
+Mod[n Log[w^inner] / (2Pi I), n]
 
 
-w=Exp[2Pi I/n];
-inner={
-{0,4,1,5,2,6,3},
-{0,1,2,3,4,5,6},
-{0,5,3,1,6,4,2},
-{0,2,4,6,1,3,5},
-{0,6,5,4,3,2,1},
-{0,3,6,2,5,1,4}
+w = Exp[2Pi I / n];
+inner = {
+    {0, 4, 1, 5, 2, 6, 3},
+    {0, 1, 2, 3, 4, 5, 6},
+    {0, 5, 3, 1, 6, 4, 2},
+    {0, 2, 4, 6, 1, 3, 5},
+    {0, 6, 5, 4, 3, 2, 1},
+    {0, 3, 6, 2, 5, 1, 4}
 };
-M = p*(w^inner) . c;
+M = p * (w^inner) . c;
 
 
 guess[b_, target_] := Catch@Table[
@@ -30,25 +30,25 @@ guess[b_, target_] := Catch@Table[
 ]
 
 
-guess[M, Tr@Exp[2Pi I {1,12,28,17}/29]]
+guess[M, Tr@Exp[2Pi I {1, 12, 28, 17} / 29]]
 
 
 {
-    guess[M, 7Tr@Exp[2Pi I {1,12,28,17}/29]+1],
-    guess[M, 7Tr@Exp[2Pi I {2,24,27,5}/29]+1],
-    guess[M, 7Tr@Exp[2Pi I {3,7,26,22}/29]+1],
-    guess[M, 7Tr@Exp[2Pi I {4,19,25,10}/29]+1],
-    guess[M, 7Tr@Exp[2Pi I {6,14,23,15}/29]+1],
-    guess[M, 7Tr@Exp[2Pi I {8,9,20,21}/29]+1]
+    guess[M, 7Tr@Exp[2Pi I {1, 12, 28, 17} / 29] + 1],
+    guess[M, 7Tr@Exp[2Pi I {2, 24, 27, 5} / 29] + 1],
+    guess[M, 7Tr@Exp[2Pi I {3, 7, 26, 22} / 29] + 1],
+    guess[M, 7Tr@Exp[2Pi I {4, 19, 25, 10} / 29] + 1],
+    guess[M, 7Tr@Exp[2Pi I {6, 14, 23, 15} / 29] + 1],
+    guess[M, 7Tr@Exp[2Pi I {8, 9, 20, 21} / 29] + 1]
 }
 
 
-MinimalPolynomial[Tr@Exp[2Pi I {1,12,28,17}/29],x]
-MinimalPolynomial[7Tr@Exp[2Pi I {1,12,28,17}/29]+1,x]/29//Expand
+MinimalPolynomial[Tr@Exp[2Pi I {1, 12, 28, 17} / 29], x]
+MinimalPolynomial[7Tr@Exp[2Pi I {1, 12, 28, 17} / 29] + 1, x] / 29 // Expand
 
 
-M/29//RootReduce
-MinimalPolynomial[First@%,x]
+M / 29 // RootReduce
+MinimalPolynomial[First@%, x]
 
 
 
