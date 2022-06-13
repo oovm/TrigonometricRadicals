@@ -39,8 +39,8 @@ Table[Exp[2 Pi I k / 11 ] + Exp[-2 Pi I k / 11 ], {k, 1, 5}] // RootReduce
 CoefficientList[MinimalPolynomial[10Cos[2Pi / 11], x], x] // Reverse
 
 
-{a, b} = getPseudoRoot[1,5,-100,-375,1875,3125]
-b=SortBy[b,Arg]
+{a, b} = getPseudoRoot[1, 5, -100, -375, 1875, 3125]
+b = SortBy[b, Arg]
 
 
 guess[b_, target_] := Catch@Table[
@@ -62,36 +62,36 @@ guess[b_, target_] := Catch@Table[
 }
 
 
-{Subscript[\[Zeta], 1], Subscript[\[Zeta], 2], Subscript[\[Zeta], 3], Subscript[\[Zeta], 4]}^(1/5)
+{Subscript[\[Zeta], 1], Subscript[\[Zeta], 2], Subscript[\[Zeta], 3], Subscript[\[Zeta], 4]}^(1 / 5)
 
 
-MinimalPolynomial[b//First,\[Zeta]]
+MinimalPolynomial[b // First, \[Zeta]]
 
 
 
-(w^m) . c//N
-p=11;n=(p-1)/2;
-w=Exp[6Pi I/n];
-c={-6,35,10,20}
-m=Table[If[j==1,0,i j],{i,1,n-1},{j,1,n-1}]
+(w^m) . c // N
+p = 11;n = (p - 1) / 2;
+w = Exp[6Pi I / n];
+c = {-6, 35, 10, 20}
+m = Table[If[j == 1, 0, i j], {i, 1, n - 1}, {j, 1, n - 1}]
 
-w=Exp[2Pi I/n];
-c={-6,35,10,20}
-inner={
-{0,1,4,2},
-{0,2,3,4},
-{0,3,2,1},
-{0,4,1,3}
+w = Exp[2Pi I / n];
+c = {-6, 35, 10, 20};
+inner = {
+    {0, 1, 4, 2},
+    {0, 2, 3, 4},
+    {0, 3, 2, 1},
+    {0, 4, 1, 3}
 };
-outer={
-{4,1,4,1},
-{1,0,0,4},
-{0,3,2,0},
-{3,4,1,2},
-{2,2,3,3}
+outer = {
+    {4, 1, 4, 1},
+    {1, 0, 0, 4},
+    {0, 3, 2, 0},
+    {3, 4, 1, 2},
+    {2, 2, 3, 3}
 };
-(w^outer) . ((w^inner) . (11c))^(1/n)//N//Chop
-Table[(p-1)Cos[2k Pi/p]+1,{k,1,n}]//N
+(w^outer) . ((w^inner) . (11c))^(1 / n) // N // Chop
+Table[(p - 1)Cos[2k Pi / p] + 1, {k, 1, n}] // N
 
 
 
