@@ -28,7 +28,7 @@ The roots can be obtained by:
 
 $$
 \begin{bmatrix}
-ζ_1\\ ζ_2\\ ζ_3\\ ζ_4\\
+ζ_1\\ζ_2\\ζ_3\\ζ_4\\
 \end{bmatrix}=
 11\begin{bmatrix}
 1 & ω   & ω^4 & ω^2 \\
@@ -37,7 +37,7 @@ $$
 1 & ω^4 & ω   & ω^3 \\
 \end{bmatrix}⋅
 \begin{bmatrix}
--6\\ 35\\ 10\\ 20\\
+-6\\35\\10\\20\\
 \end{bmatrix}
 $$
 
@@ -45,7 +45,7 @@ So the solution of the original quintic equation are:
 
 $$
 \begin{bmatrix}
-x_1\\ x_2\\ x_3\\ x_4\\ x_5\\
+x_1\\x_2\\x_3\\x_4\\x_5\\
 \end{bmatrix}=
 \begin{bmatrix}
 ω^4 & ω   & ω^4 & ω   \\
@@ -75,7 +75,7 @@ $$
 where
 
 $$
-\omega^k = \cos\left(\frac{2kπ}{5}\right)
+ω^k = \cos\left(\frac{2kπ}{5}\right)
 +\sqrt{\cos ^2\left(\frac{2kπ}{5}\right)-1}
 $$
 

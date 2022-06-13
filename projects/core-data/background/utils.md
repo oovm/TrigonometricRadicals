@@ -13,7 +13,7 @@ $$360=2^3\times 3^2\times5$$
 $$
 \begin{aligned}
 K
-&=Q(ω_3,ω_2,ω_1)(\cos\frac{2\pi}{2},\cos\frac{2\pi}{3},\cos\frac{2\pi}{5})\\
+&=Q(ω_3,ω_2,ω_1)(\cos\frac{2π}{2},\cos\frac{2π}{3},\cos\frac{2π}{5})\\
 &=Q\left(\frac{-1\pm i\sqrt{3}}{2},\frac{-1\pm\sqrt{5}}{4}\right)\\
 \end{aligned}
 $$
@@ -22,8 +22,8 @@ $$
 
 $$
 \begin{aligned}
-ω&=e^{2\pi i} =\frac{-1+i \sqrt{3}}{2}\\
-ω^2&=e^{4\pi i}=\frac{-1-i \sqrt{3}}{2}\\
+ω&=e^{2π i} =\frac{-1+i \sqrt{3}}{2}\\
+ω^2&=e^{4π i}=\frac{-1-i \sqrt{3}}{2}\\
 \alpha_1&=\frac{-1+\sqrt{5}}{4}\\
 \alpha_2&=\frac{-1-\sqrt{5}}{4}\\
 \end{aligned}

@@ -11,11 +11,11 @@ $$
 
 $$
 \begin{aligned}
-\cos\frac{2\pi}{11}&=\frac{1}{2}\left(ω^1+ω^{10}\right)\\
-\cos\frac{4\pi}{11}&=\frac{1}{2}\left(ω^2+ω^9\right)\\
-\cos\frac{6\pi}{11}&=\frac{1}{2}\left(ω^3+ω^8\right)\\
-\cos\frac{8\pi}{11}&=\frac{1}{2}\left(ω^4+ω^7\right)\\
-\cos\frac{10\pi}{11}&=\frac{1}{2}\left(ω^5+ω^6\right)\\
+\cos\frac{2π}{11}&=\frac{1}{2}\left(ω^1+ω^{10}\right)\\
+\cos\frac{4π}{11}&=\frac{1}{2}\left(ω^2+ω^9\right)\\
+\cos\frac{6π}{11}&=\frac{1}{2}\left(ω^3+ω^8\right)\\
+\cos\frac{8π}{11}&=\frac{1}{2}\left(ω^4+ω^7\right)\\
+\cos\frac{10π}{11}&=\frac{1}{2}\left(ω^5+ω^6\right)\\
 \end{aligned}
 $$
 
@@ -93,15 +93,15 @@ $$
 
 $$
 \begin{aligned}
-\cos\frac{1\pi}{11}&=-\frac{1}{2}σ_5\\
-\cos\frac{2\pi}{11}&=+\frac{1}{2}σ_1\\
-\cos\frac{3\pi}{11}&=-\frac{1}{2}σ_4\\
-\cos\frac{4\pi}{11}&=+\frac{1}{2}σ_2\\
-\cos\frac{5\pi}{11}&=-\frac{1}{2}σ_3\\
-\cos\frac{6\pi}{11}&=+\frac{1}{2}σ_3\\
-\cos\frac{7\pi}{11}&=-\frac{1}{2}σ_2\\
-\cos\frac{8\pi}{11}&=+\frac{1}{2}σ_4\\
-\cos\frac{9\pi}{11}&=-\frac{1}{2}σ_1\\
-\cos\frac{10\pi}{11}&=+\frac{1}{2}σ_5\\
+\cos\frac{1π}{11}&=-\frac{1}{2}σ_5\\
+\cos\frac{2π}{11}&=+\frac{1}{2}σ_1\\
+\cos\frac{3π}{11}&=-\frac{1}{2}σ_4\\
+\cos\frac{4π}{11}&=+\frac{1}{2}σ_2\\
+\cos\frac{5π}{11}&=-\frac{1}{2}σ_3\\
+\cos\frac{6π}{11}&=+\frac{1}{2}σ_3\\
+\cos\frac{7π}{11}&=-\frac{1}{2}σ_2\\
+\cos\frac{8π}{11}&=+\frac{1}{2}σ_4\\
+\cos\frac{9π}{11}&=-\frac{1}{2}σ_1\\
+\cos\frac{10π}{11}&=+\frac{1}{2}σ_5\\
 \end{aligned}
 $$
