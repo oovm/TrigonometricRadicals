@@ -1,64 +1,54 @@
 (* ::Package:: *)
 
-Simplify`TrigToRealRadicals;
-noSin[e_] := FullSimplify[e, ComplexityFunction -> (100 Count[#, Sin[__] | Power[-1, ___], All] + LeafCount[#]&)]
-System`TrigToRadicalsDump`cos[2Pi / 29];
-Vieta[list_] := Block[
-    {l = Length[list]},
-    Table[Tr[Times @@ (list[[#]])& /@ Subsets[Range@l, {i}]], {i, 1, l}]
-];
+p=29;n=7;
+w=Exp[(n+1)Pi I/n];
+c={-1564,-1276 ,-1598 ,2182,1153,-898,2014};
+inner=Table[i j,{i,1,n-1},{j,0,n-1}];
+Mod[inner,n]
+Mod[n Log[w^inner]/(2Pi I),n]
 
 
-MinimalPolynomial[29Cos[2Pi/29],x]==0
+w=Exp[2Pi I/n];
+inner={
+{0,4,1,5,2,6,3},
+{0,1,2,3,4,5,6},
+{0,5,3,1,6,4,2},
+{0,2,4,6,1,3,5},
+{0,6,5,4,3,2,1},
+{0,3,6,2,5,1,4}
+};
+M = p*(w^inner) . c;
 
 
-root=29System`TrigToRadicalsDump`cos[2Pi / 29]//Simplify;
-one=First@Cases[root,Power[x___,1/7]:>x,Infinity];
-
-
-n = 15;p = 2;
-Table[{i, n - i}, {i, 1, (n - 1) / 2}]
-
-
-gen[n_] := Min@Select[Range[n], CoprimeQ[#, n] && MultiplicativeOrder[#, n] == CarmichaelLambda[n] &]
-
-
-n = 11;g = gen[n]
-Table[{i, n - i}, {i, 1, (n - 1) / 2}]
-
-
-Cos[2Pi / 11] // RootReduce // ToRadicals
-
-
-Table[Exp[2 Pi I k / 11 ] + Exp[-2 Pi I k / 11 ], {k, 1, 5}] // RootReduce
-
-
-CoefficientList[MinimalPolynomial[10Cos[2Pi / 11], x], x] // Reverse
-
-
-{a, b} = getPseudoRoot[1,5,-100,-375,1875,3125]
-b=SortBy[b,Arg]
-
-
-guess[a_, b_, target_] := Catch@Table[
+guess[b_, target_] := Catch@Table[
     If[
-        Chop[b^(1 / 5) . Exp[2.0 var Pi I / 5] + a - target] === 0,
-        Throw[var]
+        Chop@N[b^(1 / 7) . Exp[2 var2 Pi I / 7] - target] === 0,
+        Throw[var],
+        Nothing
     ],
-    {var, Tuples[Range[0, 4], 4]}
+    {var, Tuples[Range[0, 6], Length@b]}
 ]
 
 
-\[Omega]^{
-    guess[a, b, 10 Cos[2Pi / 11]],
-    guess[a, b, 10 Cos[4Pi / 11]],
-    guess[a, b, 10 Cos[6Pi / 11]],
-    guess[a, b, 10 Cos[8Pi / 11]],
-    guess[a, b, 10 Cos[10Pi / 11]]
+guess[M, Tr@Exp[2Pi I {1,12,28,17}/29]]
+
+
+{
+    guess[M, 7Tr@Exp[2Pi I {1,12,28,17}/29]+1],
+    guess[M, 7Tr@Exp[2Pi I {2,24,27,5}/29]+1],
+    guess[M, 7Tr@Exp[2Pi I {3,7,26,22}/29]+1],
+    guess[M, 7Tr@Exp[2Pi I {4,19,25,10}/29]+1],
+    guess[M, 7Tr@Exp[2Pi I {6,14,23,15}/29]+1],
+    guess[M, 7Tr@Exp[2Pi I {8,9,20,21}/29]+1]
 }
 
 
-{Subscript[\[Zeta], 1], Subscript[\[Zeta], 2], Subscript[\[Zeta], 3], Subscript[\[Zeta], 4]}^(1/5)
+MinimalPolynomial[Tr@Exp[2Pi I {1,12,28,17}/29],x]
+MinimalPolynomial[7Tr@Exp[2Pi I {1,12,28,17}/29]+1,x]/29//Expand
 
 
-MinimalPolynomial[b//First,\[Zeta]]
+M/29//RootReduce
+MinimalPolynomial[First@%,x]
+
+
+
