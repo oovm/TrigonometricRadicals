@@ -68,12 +68,12 @@ guess[b_, target_] := Catch@Table[
 MinimalPolynomial[b//First,\[Zeta]]
 
 
+
+(w^m) . c//N
 p=11;n=(p-1)/2;
 w=Exp[6Pi I/n];
 c={-6,35,10,20}
 m=Table[If[j==1,0,i j],{i,1,n-1},{j,1,n-1}]
-(w^m) . c//N
-
 
 w=Exp[2Pi I/n];
 c={-6,35,10,20}
