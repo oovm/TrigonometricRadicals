@@ -62,6 +62,9 @@ inner = Table[i j, {i, 1, n - 1}, {j, 0, n - 2}]
 Mod[n Log[w^inner] / (2Pi I), 11]
 
 
+List /@ {384812, 188298, -625515, -78859, 740707, 84370, 834405, 98208, 361900, -56177}
+
+
 w = Exp[2Pi I / n];
 inner = {
     {0, 6, 1, 7, 2, 8, 3, 9, 4, 10},
@@ -75,13 +78,26 @@ inner = {
     {0, 10, 9, 8, 7, 6, 5, 4, 3, 2},
     {0, 5, 10, 4, 9, 3, 8, 2, 7, 1}
 };
+outer = {
+    {0, 3, 3, 1, 9, 2, 10, 8, 8, 0},
+    {10, 1, 0, 8, 4, 7, 3, 0, 10, 1},
+    {3, 9, 1, 2, 2, 9, 9, 10, 2, 8},
+    {9, 10, 8, 4, 10, 1, 7, 3, 1, 2},
+    {5, 2, 7, 10, 1, 10, 1, 4, 9, 6},
+    {2, 7, 9, 9, 8, 3, 2, 2, 4, 9},
+    {7, 6, 2, 7, 0, 0, 4, 9, 5, 4},
+    {8, 8, 5, 0, 5, 6, 0, 6, 3, 3},
+    {6, 4, 10, 3, 6, 5, 8, 1, 7, 5},
+    {4, 0, 4, 6, 7, 4, 5, 7, 0, 7},
+    {1, 5, 6, 5, 3, 8, 6, 5, 6, 10}
+};
 M = (w^inner) . c;
 
 
 guess[b_, target_] := Catch@Table[
     var2 = Mod[Flatten[Transpose@{var, -Reverse@var}], 11];
     If[
-        Chop@N[b^(1 / 11) . Exp[2 var2 Pi I / 11] - target, 50] === 0,
+        Chop@N[b^(1 / 11) . Exp[2 var2 Pi I / 11] - target] === 0,
         Throw[var2],
         Nothing
     ],
@@ -89,15 +105,12 @@ guess[b_, target_] := Catch@Table[
 ]
 
 
-var = {8, 0, 8, 2, 10}
-Mod[Flatten[Transpose@{var, -Reverse@var}], 11]
-
-
 {
     guess[M, 22 Cos[2Pi / 23] + 1],
     guess[M, 22 Cos[4Pi / 23] + 1],
     guess[M, 22 Cos[6Pi / 23] + 1],
     guess[M, 22 Cos[8Pi / 23] + 1],
+    guess[M, 22 Cos[10Pi / 23] + 1],
     guess[M, 22 Cos[12Pi / 23] + 1],
     guess[M, 22 Cos[14Pi / 23] + 1],
     guess[M, 22 Cos[16Pi / 23] + 1],
@@ -107,7 +120,4 @@ Mod[Flatten[Transpose@{var, -Reverse@var}], 11]
 }
 
 
-{Subscript[\[Zeta], 1], Subscript[\[Zeta], 2], Subscript[\[Zeta], 3], Subscript[\[Zeta], 4]}^(1 / 5)
-
-
-MinimalPolynomial[b // First, \[Zeta]]
+\[Omega]^outer

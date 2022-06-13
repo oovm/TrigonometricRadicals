@@ -7,7 +7,7 @@ $$
 
 Equivalent to solving the equation:
 
-$$x^5-10⋅11x^3-5⋅11x^2+210⋅11x+89⋅11=0$$
+$$\frac{x^5}{11}=10x^3+5x^2-210x-89=0$$
 
 Its 5 roots $x_i$ can be obtained by combining the 4 roots $ζ_i$ of the resolvent.
 
@@ -28,16 +28,16 @@ The roots can be obtained by:
 
 $$
 \begin{bmatrix}
-ζ_1\\ζ_2\\ζ_3\\ζ_4\\
+ζ_1\\ ζ_2\\ ζ_3\\ ζ_4\\
 \end{bmatrix}=
 11\begin{bmatrix}
-1 & ω & ω^4 & ω^2 \\
+1 & ω   & ω^4 & ω^2 \\
 1 & ω^2 & ω^3 & ω^4 \\
 1 & ω^3 & ω^2 & ω \\
-1 & ω^4 & ω & ω^3 \\
+1 & ω^4 & ω   & ω^3 \\
 \end{bmatrix}⋅
 \begin{bmatrix}
--6\\35\\10\\20\\
+-6\\ 35\\ 10\\ 20\\
 \end{bmatrix}
 $$
 
@@ -45,7 +45,7 @@ So the solution of the original quintic equation are:
 
 $$
 \begin{bmatrix}
-x_1\\x_2\\x_3\\x_4\\x_5\\
+x_1\\ x_2\\ x_3\\ x_4\\ x_5\\
 \end{bmatrix}=
 \begin{bmatrix}
 ω^4 & ω   & ω^4 & ω   \\
@@ -73,6 +73,12 @@ $$
 $$
 
 where
+
+$$
+\omega^k = \cos\left(\frac{2kπ}{5}\right)
++\sqrt{\cos ^2\left(\frac{2kπ}{5}\right)-1}
+$$
+
 
 $$
 \begin{aligned}
