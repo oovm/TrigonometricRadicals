@@ -27,6 +27,9 @@ outer = {
 M = p * (w^inner) . c;
 
 
+\[Omega]^outer
+
+
 guess[b_, target_] := Catch@Table[
     If[
         Chop@N[b^(1 / 7) . Exp[2 var Pi I / 7] - target] === 0,
