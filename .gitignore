@@ -13,3 +13,7 @@ Cargo.lock
 time-travel.*
 dist/
 *.nb
+
+# TeX
+build/
+*.pdf

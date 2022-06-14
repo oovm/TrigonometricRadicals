@@ -7,3 +7,4 @@ edition = "2021"
 
 [dependencies]
 ndarray = "0.15.4"
+num = "0.4.0"
