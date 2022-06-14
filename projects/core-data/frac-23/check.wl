@@ -9,7 +9,7 @@ inner = Table[i j, {i, 1, n - 1}, {j, 0, n - 2}];
 inner = {
     {0, 1, 2, 3, 4, 5, 6, 7, 8, 9},
     {0, 2, 4, 6, 8, 10, 1, 3, 5, 7},
-    {0, 3, 6, 9, 1, 4, 7, 10, 3, 5},
+    {0, 3, 6, 9, 1, 4, 7, 10, 2, 5},
     {0, 4, 8, 1, 5, 9, 2, 6, 10, 3},
     {0, 5, 10, 4, 9, 3, 8, 2, 7, 1},
     {0, 6, 1, 7, 2, 8, 3, 9, 4, 10},
@@ -34,19 +34,22 @@ outer = {
 M = Dot[w^inner, p c];
 
 
-Dot[w^outer,M^(1 / n)] // N // Chop
+Dot[w^outer, M^(1 / n)] // N // Chop
 Table[(p - 1)Cos[2k Pi / p] + 1, {k, 1, n}] // N
 
 
 guess[b_, target_] := Catch@Table[
-    var2 = Mod[Flatten[Transpose@{var, -Reverse@var}], 11];
+    var2 = Mod[Flatten[Transpose@{var, -Reverse@var}], n];
     If[
-        Chop@N[b^(1 / 11) . Exp[2 var2 Pi I / 11] - target] === 0,
+        Chop@N[b^(1 / n) . Exp[2 var2 Pi I / n] - target] === 0,
         Throw[var2],
         Nothing
     ],
-    {var, Tuples[Range[0, 10], 5]}
+    {var, Tuples[Range[0, n - 1], 5]}
 ];
+
+
+guess[M, 22 Cos[2Pi / 23] + 1]
 
 
 outer = {
