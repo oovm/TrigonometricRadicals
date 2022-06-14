@@ -5,7 +5,14 @@ https://www.zhihu.com/question/37472890/answer/2374018182
 Consider
 
 $$
-\sum_{k=1}^{11}\left(22\cos\frac{2 k π i}{23}+1\right)=0
+\begin{aligned}
+y_1 &= ω^1+ω^{12}+ω^{17}+ω^{28}\\
+y_2 &= ω^2+ω^5+ω^{24}+ω^{27}\\
+y_3 &= ω^3+ω^7+ω^{22}+ω^{26}\\
+y_4 &= ω^4+ω^{10}+ω^{19}+ω^{25}\\
+y_5 &= ω^6+ω^{14}+ω^{15}+ω^{23}\\
+y_6 &= ω^8+ω^9+ω^{20}+ω^{21}\\
+\end{aligned}
 $$
 
 Equivalent to solving the equation:

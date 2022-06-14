@@ -34,11 +34,11 @@ guess[M, Tr@Exp[2Pi I {1, 12, 28, 17} / 29]]
 
 
 {
-    guess[M, 7Tr@Exp[2Pi I {1, 12, 28, 17} / 29] + 1],
-    guess[M, 7Tr@Exp[2Pi I {2, 24, 27, 5} / 29] + 1],
-    guess[M, 7Tr@Exp[2Pi I {3, 7, 26, 22} / 29] + 1],
-    guess[M, 7Tr@Exp[2Pi I {4, 19, 25, 10} / 29] + 1],
-    guess[M, 7Tr@Exp[2Pi I {6, 14, 23, 15} / 29] + 1],
+    guess[M, 7Tr@Exp[2Pi I {1, 12, 17, 28} / 29] + 1],
+    guess[M, 7Tr@Exp[2Pi I {2, 5, 24, 27} / 29] + 1],
+    guess[M, 7Tr@Exp[2Pi I {3, 7, 22, 26} / 29] + 1],
+    guess[M, 7Tr@Exp[2Pi I {4, 10, 19, 25} / 29] + 1],
+    guess[M, 7Tr@Exp[2Pi I {6, 14, 15, 23} / 29] + 1],
     guess[M, 7Tr@Exp[2Pi I {8, 9, 20, 21} / 29] + 1]
 }
 

@@ -1,13 +1,13 @@
 (* ::Package:: *)
 
-Cos[1 Pi/16] // RootReduce // ToRadicals
-Cos[3 Pi/16] // RootReduce // ToRadicals
-Cos[5 Pi/16] // RootReduce // ToRadicals
-Cos[7 Pi/16] // RootReduce // ToRadicals
-Cos[9 Pi/16] // RootReduce // ToRadicals
-Cos[11 Pi/16] // RootReduce // ToRadicals
-Cos[13 Pi/16] // RootReduce // ToRadicals
-Cos[15 Pi/16] // RootReduce // ToRadicals
+Simplify`TrigToRealRadicals;
+8System`TrigToRadicalsDump`cos[2Pi / 15] // Simplify // ExpandAll
+8System`TrigToRadicalsDump`cos[4Pi / 15] // Simplify // ExpandAll
+8Cos[6Pi / 15] // Simplify // ExpandAll
+8System`TrigToRadicalsDump`cos[8Pi / 15] // Simplify // ExpandAll
+8Cos[10Pi / 15] // Simplify // ExpandAll
+8Cos[12Pi / 15] // Simplify // ExpandAll
+8System`TrigToRadicalsDump`cos[14Pi / 15] // Simplify // ExpandAll
 
 
 cos15 = {
