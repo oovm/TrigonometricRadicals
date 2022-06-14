@@ -1,17 +1,37 @@
 (* ::Package:: *)
 
-Clear[rule, value];
-value = {
-	(7 + \[Beta] + \[Beta]^2) / (6 \[Beta]),
-	(7 - \[Alpha] + \[Alpha]^2) / (6 \[Alpha]),
-	(\[Alpha]^2 \[Beta] - \[Alpha] \[Beta]^2 - 7 \[Alpha] + 7 \[Beta] + \[Alpha] \[Beta]) / (6\[Alpha] \[Beta]),
-	(\[Alpha] \[Beta]^2 - \[Alpha]^2 \[Beta] - \[Alpha] \[Beta] + 7 \[Alpha] - 7 \[Beta]) / (6\[Alpha] \[Beta]),
-	-(7 - \[Alpha] + \[Alpha]^2) / (6 \[Alpha]),
-	-(7 + \[Beta] + \[Beta]^2) / (6 \[Beta])
+p = 7;n = 3;
+w = Exp[2Pi I / n];
+c = {2, 3};
+inner = Table[i j, {i, 1, n - 1}, {j, 0, n - 2}];
+
+
+inner = {
+    {0, 1},
+    {0, 2}
 };
-rule = {
-	\[Alpha] -> (7(3 I Sqrt[3] + 1) / 2)^(1 / 3),
-	\[Beta] -> (7(3 I Sqrt[3] - 1) / 2)^(1 / 3)
+outer = {
+    {0, 0},
+    {2, 1},
+    {1, 2}
 };
-value /. rule // N // Chop
-Table[Cos[k Pi / 7], {k, 1, 6}] // N
+M = Dot[w^inner, p c];
+Dot[w^outer, M^(1 / n)] // N // Chop
+Table[(p - 1)Cos[2k Pi / p] + 1, {k, 1, n}] // N
+
+
+guess[b_, target_] := Catch@Table[
+    If[
+        Chop[b^(1 / n) . Exp[2.0 var Pi I / n] - target] === 0,
+        Throw[var],
+        Nothing
+    ],
+    {var, Tuples[Range[0, n - 1], Length@b]}
+]
+
+
+{
+    guess[M, 6 Cos[2Pi / 7] + 1],
+    guess[M, 6 Cos[4Pi / 7] + 1],
+    guess[M, 6 Cos[6Pi / 7] + 1]
+}
