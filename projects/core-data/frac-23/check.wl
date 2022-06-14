@@ -65,3 +65,6 @@ outer = {
     guess[M, 22 Cos[20Pi / 23] + 1],
     guess[M, 22 Cos[22Pi / 23] + 1]
 }
+
+
+FindPermutation[Transpose@outer]

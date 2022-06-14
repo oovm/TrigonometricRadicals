@@ -11,11 +11,12 @@ $$
 
 $$
 \begin{aligned}
-\cos\frac{2π}{11}&=\frac{1}{2}\left(ω^1+ω^{10}\right)\\
-\cos\frac{4π}{11}&=\frac{1}{2}\left(ω^2+ω^9\right)\\
-\cos\frac{6π}{11}&=\frac{1}{2}\left(ω^3+ω^8\right)\\
-\cos\frac{8π}{11}&=\frac{1}{2}\left(ω^4+ω^7\right)\\
-\cos\frac{10π}{11}&=\frac{1}{2}\left(ω^5+ω^6\right)\\
+12 \cos\frac{2 π}{13}&=-1+\sqrt{13}+\sqrt[3]{ζ_1}+\sqrt[3]{ζ_2} \\
+12 \cos\frac{4 π}{13}&=-1-\sqrt{13}+\sqrt[3]{ζ_3}+\sqrt[3]{ζ_4} \\
+12 \cos\frac{6 π}{13}&=-1+\sqrt{13}+ω\sqrt[3]{ζ_1}+ω^2\sqrt[3]{ζ_2} \\
+12 \cos\frac{8 π}{13}&=-1+\sqrt{13}+ω\sqrt[3]{ζ_2}+ω^2\sqrt[3]{ζ_1} \\
+12 \cos\frac{10π}{13}&=-1-\sqrt{13}+ω\sqrt[3]{ζ_3}+ω^2\sqrt[3]{ζ_4} \\
+12 \cos\frac{12π}{13}&=-1-\sqrt{13}+ω\sqrt[3]{ζ_4}+ω^2\sqrt[3]{ζ_3} \\
 \end{aligned}
 $$
 
@@ -23,8 +24,10 @@ $$
 
 $$
 \begin{aligned}
-σ_{0}
-&=ω^1+ω^2+ω^3+ω^4+ω^5+ω^6+ω^7+ω^8+ω^9+ω^{10}=-1
+ζ_1=4 \left(26-i\sqrt{26-390 i \sqrt{3}}\right) \\
+ζ_2=4 \left(26-i\sqrt{26+390 i \sqrt{3}}\right) \\
+ζ_3=4 \left(26+i\sqrt{26+390 i \sqrt{3}}\right) \\
+ζ_4=4 \left(26+i\sqrt{26-390 i \sqrt{3}}\right) \\
 \end{aligned}
 $$
 
