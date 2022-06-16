@@ -1,0 +1,112 @@
+\chapter{n = 11}\label{ch:cos11}
+
+$10\cos\dfrac{2kπ}{11}+1$ 的生成多项式为:
+
+$$
+P_{11} = x^5-110 x^3-55 x^2+2310 x+979
+$$
+
+这是一个不可约的五次方程, 其伽罗瓦群为循环群
+
+$$
+\begin{aligned}
+ω&= e^{2πi/3}\\
+ω^n&=ω^{n\bmod 3}
+\end{aligned}
+$$
+
+
+Equivalent to solving the equation:
+
+$$\frac{x^5}{11}=10x^3+5x^2-210x-89=0$$
+
+Its 5 roots $x_i$ can be obtained by combining the 4 roots $ζ_i$ of the resolvent.
+
+$$
+x^4+89⋅11x^3+351⋅11^3x^2+89⋅11^6⋅x+11^{10}=0
+$$
+
+Let 
+
+$$
+\begin{aligned}
+ω&= e^{2πi/5}\\
+ω^n&=ω^{n\bmod 5} 
+\end{aligned}
+$$
+
+于是可以解出四个伪根:
+
+$$
+\begin{bmatrix}
+ζ_1\\ζ_2\\ζ_3\\ζ_4\\
+\end{bmatrix}=
+11\begin{bmatrix}
+1 & ω   & ω^4 & ω^2 \\
+1 & ω^2 & ω^3 & ω^4 \\
+1 & ω^3 & ω^2 & ω \\
+1 & ω^4 & ω   & ω^3 \\
+\end{bmatrix}⋅
+\begin{bmatrix}
+-6\\35\\10\\20\\
+\end{bmatrix}
+$$
+
+进一步组合出五个真根:
+
+$$
+\begin{bmatrix}
+x_1\\x_2\\x_3\\x_4\\x_5\\
+\end{bmatrix}=
+\begin{bmatrix}
+ω^4 & ω   & ω^4 & ω   \\
+ω   & 1   & 1   & ω^4 \\
+1   & ω^3 & ω^2 & 1   \\
+ω^3 & ω^4 & ω   & ω^2 \\
+ω^2 & ω^2 & ω^3 & ω^3 \\
+\end{bmatrix}⋅
+\begin{bmatrix}
+\sqrt[5]{ζ_1} \\
+\sqrt[5]{ζ_2} \\
+\sqrt[5]{ζ_3} \\
+\sqrt[5]{ζ_4} \\
+\end{bmatrix}
+$$
+
+
+最终得到
+
+$$
+\begin{aligned}
+\cos\left(\frac{2kπ}{11}\right) = \frac{1}{10}\left(x_k-1\right)
+\end{aligned}
+$$
+
+$$
+ω^k
+=\cos\left(\frac{2kπ}{5}\right)
++\sqrt{\cos^2\left(\frac{2kπ}{5}\right)-1}
+$$
+
+也可以全部展开得到:
+
+$$
+\begin{aligned}
+ω^0 &= 1\\
+ω^1 &=+\frac{1}{4} \left(\sqrt{5}-1+i\sqrt{10+2\sqrt{5}}\right) \\
+ω^2 &=-\frac{1}{4} \left(\sqrt{5}+1-i\sqrt{10-2\sqrt{5}}\right) \\
+ω^3 &=-\frac{1}{4} \left(\sqrt{5}+1+i\sqrt{10-2\sqrt{5}}\right) \\
+ω^4 &=+\frac{1}{4} \left(\sqrt{5}-1-i\sqrt{10+2\sqrt{5}}\right) \\
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+ζ_1&=-\frac{11}{4} \left(89-25 \sqrt{5}-5 i \sqrt{410+178 \sqrt{5}}\right) \\
+ζ_2&=-\frac{11}{4} \left(89+25 \sqrt{5}+5 i \sqrt{410-178 \sqrt{5}}\right) \\
+ζ_3&=-\frac{11}{4} \left(89+25 \sqrt{5}-5 i \sqrt{410-178 \sqrt{5}}\right) \\
+ζ_4&=-\frac{11}{4} \left(89-25 \sqrt{5}+5 i \sqrt{410+178 \sqrt{5}}\right) \\
+\end{aligned}
+$$
+
+
