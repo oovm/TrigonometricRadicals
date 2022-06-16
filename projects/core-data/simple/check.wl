@@ -16,3 +16,6 @@ cos13 = {
     HoldForm[2Cos[3 Pi / 12]== 2Cos[Pi / 4]],
     HoldForm[2Cos[5 Pi / 12]== Sqrt[2-Sqrt[3]]/2]
 };
+
+
+CosTable[k_,12]:=HoldForm[]
