@@ -20,7 +20,7 @@ Let
 $$
 \begin{aligned}
 ω&= e^{2πi/5}\\
-ω^n&=ω^{n\bmod 5}
+ω^n&=ω^{n\bmod 5} 
 \end{aligned}
 $$
 
@@ -98,3 +98,5 @@ $$
 ζ_4&=-\frac{11}{4} \left(89-25 \sqrt{5}+5 i \sqrt{410+178 \sqrt{5}}\right) \\
 \end{aligned}
 $$
+
+
