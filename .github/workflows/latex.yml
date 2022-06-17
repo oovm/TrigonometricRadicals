@@ -1,0 +1,34 @@
+name: 'Build LaTex Book'
+
+on:
+  push:
+    branches: [ master, dev ]
+  pull_request:
+    branches: [ master, dev ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - uses: actions/cache@v2
+        name: Tectonic Cache
+        with:
+          path: ~/.cache/Tectonic
+          key: ${{ runner.os }}-tectonic-${{ hashFiles('**/*.tex') }}
+          restore-keys: |
+            ${{ runner.os }}-tectonic-
+      - uses: wtfjoke/setup-tectonic@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Run Tectonic
+        run: |
+          cd projects/tex-book
+          tectonic -X build
+      - name: Upload pdf
+        uses: actions/upload-artifact@v3
+        with:
+          name: trig-in-radicals.pdf
+          path: projects/tex-book/build/trig/trig.pdf

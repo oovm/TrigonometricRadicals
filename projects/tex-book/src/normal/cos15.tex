@@ -1,28 +1,33 @@
-\chapter{n = 12}\label{ch:cos12}
+\chapter{n = 20}\label{ch:cos20}
 
-$4\cos\dfrac{(2k-1)kπ}{12}$ 的最小生成多项式为:
+
+考虑非退化情况, $K = \{2, 4, 8, 14\}$
 
 $$
-P_{12} = x^4 - 16x^2 + 16
+\sum_{k∈K}\left(x - \cos\frac{kπ}{20}\right)
 $$
 
-这个四次方程看成二次方程直接解即可:
+其等价于方程
+
+$$
+P_{20} = x^8 - 128x^6 + 4864x^4 - 49152x^2 + 65536
+$$
+
+计算乘法模群同构得到:
+
+$$
+(\mathbb{Z}/20\mathbb{Z})^× ≅ C_2×C_4
+$$
+
+
+对于 $C_4$ 考虑 $ω = e^{2π/5}$
+
 
 $$
 \begin{aligned}
-x_1&=2\sqrt{2+\sqrt{3}}=\sqrt{6}+\sqrt{2}\\
-x_2&=2\sqrt{2-\sqrt{3}}=\sqrt{6}-\sqrt{2}\\
-\end{aligned}
-$$
-
-虽然是个 4 次方程但是可以化简成 1 重根.
-
-代入得:
-
-$$
-\begin{aligned}
-\cos\frac{  π}{12}&=\frac{\sqrt{6}+\sqrt{2}}{4}\\
-\cos\frac{3 π}{12}&=\cos\frac{π}{4}\\
-\cos\frac{5 π}{12}&=\frac{\sqrt{6}-\sqrt{2}}{4}\\
+\cos\frac{2π}{15}&=\frac{1+\sqrt{5}}{8}+\frac{\sqrt{6}}{8}\sqrt{5-\sqrt{5}}\\
+\cos\frac{4π}{15}&=\frac{1-\sqrt{5}}{8}+\frac{\sqrt{6}}{8}\sqrt{5+\sqrt{5}}\\
+\cos\frac{8π}{15}&=\frac{1+\sqrt{5}}{8}-\frac{\sqrt{6}}{8}\sqrt{5-\sqrt{5}}\\
+\cos\frac{14π}{15}&=\frac{1-\sqrt{5}}{8}-\frac{\sqrt{6}}{8}\sqrt{5+\sqrt{5}}\\
 \end{aligned}
 $$
