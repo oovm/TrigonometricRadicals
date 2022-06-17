@@ -1,0 +1,1 @@
+https://math.stackexchange.com/questions/516142/how-does-cos2-pi-257-look-like-in-real-radicals
