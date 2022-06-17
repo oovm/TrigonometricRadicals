@@ -1,6 +1,4 @@
-use std::collections::BTreeMap;
 use std::fmt::{Display, Formatter};
-use std::ops::Neg;
 use crate::Sign;
 
 /// $$+\frac{1}{2}\sqrt{2+\sqrt{2+\sqrt{2}}}$$
