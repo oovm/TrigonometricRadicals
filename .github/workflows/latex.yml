@@ -28,7 +28,7 @@ jobs:
           cd projects/tex-book
           tectonic -X build
       - name: Upload pdf
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: trig-in-radicals.pdf
           path: projects/tex-book/build/trig/trig.pdf
