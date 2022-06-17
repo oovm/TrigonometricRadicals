@@ -1,0 +1,49 @@
+\documentclass[lang=cn,10pt]{elegantbook}
+\usepackage[yyyymmdd,hhmmss]{datetime}
+\usepackage{unicode-math}
+\usepackage{fontspec}
+
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+}
+\setmainfont{texgyrepagella}[
+  Extension = .otf,
+  UprightFont = *-regular,
+  BoldFont = *-bold,
+  ItalicFont = *-italic,
+  BoldItalicFont = *-bolditalic,
+]
+
+%
+\title{Trigonometric in Radicals}
+\subtitle{Elegant\LaTeX{} 经典之作}
+
+\author{Aster}
+% \institute{Elegant\LaTeX{} Program}
+\date{April 5, 2012}
+\version{\today}
+\logo{logo.png}
+\cover{cover.png}
+\extrainfo{不要以为抹消过去，重新来过，即可发生什么改变。—— 比企谷八幡}
+
+
+
+
+
+
+\setcounter{tocdepth}{3}
+% 本文档命令
+\usepackage{array}
+\newcommand{\ccr}[1]{\makecell{{\color{#1}\rule{1cm}{1cm}}}}
+
+% 修改标题页的橙色带
+% \definecolor{customcolor}{RGB}{32,178,170}
+% \colorlet{coverlinecolor}{customcolor}
+
+\begin{document}
