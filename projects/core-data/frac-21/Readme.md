@@ -2,7 +2,7 @@
 
 $$
 \begin{aligned}
-ω&= e^{2πi/11}\\
+ω&= e^{2πi/21}\\
 ω^n&=ω^{n\bmod 11}
 \end{aligned}
 $$

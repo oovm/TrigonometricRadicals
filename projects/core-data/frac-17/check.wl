@@ -42,7 +42,7 @@ solve[a_, b_, greater_] := If[
 ];
 
 
-n = 17;p = 3;
+n = 15;p = 2;
 PrimitiveRootList[n]
 
 
