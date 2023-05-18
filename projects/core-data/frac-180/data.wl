@@ -66,93 +66,71 @@ System`TrigToRadicalsDump`sin[80Pi/180]/.rule//FullSimplify
 System`TrigToRadicalsDump`sin[85Pi/180]/.rule//FullSimplify
 
 
+MinimalPolynomial[Sin[3Pi/180],x]
+
+
+$Line = 0;
 System`TrigToRadicalsDump`sin[3Pi/180]//Simplify
 System`TrigToRadicalsDump`sin[21Pi/180]//Simplify
+System`TrigToRadicalsDump`sin[33Pi/180]//Simplify
+System`TrigToRadicalsDump`sin[39Pi/180]//Simplify
+System`TrigToRadicalsDump`sin[51Pi/180]//Simplify
+System`TrigToRadicalsDump`sin[57Pi/180]//Simplify
+System`TrigToRadicalsDump`sin[69Pi/180]//Simplify
+System`TrigToRadicalsDump`sin[87Pi/180]//Simplify
+
+
+System`TrigToRadicalsDump`sin[9Pi/180]//Simplify
+System`TrigToRadicalsDump`sin[12Pi/180]//Simplify
+System`TrigToRadicalsDump`sin[24Pi/180]//Simplify
+System`TrigToRadicalsDump`sin[27Pi/180]//Simplify
+System`TrigToRadicalsDump`sin[48Pi/180]//Simplify
+System`TrigToRadicalsDump`sin[63Pi/180]//Simplify
+System`TrigToRadicalsDump`sin[81Pi/180]//Simplify
+System`TrigToRadicalsDump`sin[84Pi/180]//Simplify
 
 
 System`TrigToRadicalsDump`sin[6Pi/180]//Simplify
-System`TrigToRadicalsDump`sin[9Pi/180]//Simplify
-System`TrigToRadicalsDump`sin[12Pi/180]//Simplify
+System`TrigToRadicalsDump`sin[42Pi/180]//Simplify
+System`TrigToRadicalsDump`sin[66Pi/180]//Simplify
+System`TrigToRadicalsDump`sin[78Pi/180]//Simplify
+
+
+MinimalPolynomial[Sin[15Pi/180],x]
+MinimalPolynomial[Sin[75Pi/180],x]
+MinimalPolynomial[Sin[36Pi/180],x]
+MinimalPolynomial[Sin[72Pi/180],x]
+MinimalPolynomial[Sin[45Pi/180],x]
+MinimalPolynomial[Sin[54Pi/180],x]
+
+
 System`TrigToRadicalsDump`sin[15Pi/180]//Simplify
-System`TrigToRadicalsDump`sin[18Pi/180]//Simplify
-System`TrigToRadicalsDump`sin[24Pi/180]//Simplify
-System`TrigToRadicalsDump`sin[27Pi/180]//Simplify
+
+
+System`TrigToRadicalsDump`sin[36Pi/180]//Simplify
+System`TrigToRadicalsDump`sin[72Pi/180]//Simplify
+System`TrigToRadicalsDump`sin[75Pi/180]//Simplify
+
+
+MinimalPolynomial[Sin[90Pi/180],x]
+System`TrigToRadicalsDump`sin[90Pi/180]//Simplify
+
+
+MinimalPolynomial[Sin[30Pi/180],x]
 System`TrigToRadicalsDump`sin[30Pi/180]//Simplify
 
 
+MinimalPolynomial[Sin[45Pi/180],x]
+MinimalPolynomial[Sin[60Pi/180],x]
 
-
-System`TrigToRadicalsDump`sin[33Pi/180]//Simplify
-System`TrigToRadicalsDump`sin[39Pi/180]//Simplify
-
-System`TrigToRadicalsDump`sin[36Pi/180]//Simplify
-
-
-
-
-System`TrigToRadicalsDump`sin[42Pi/180]//Simplify
 System`TrigToRadicalsDump`sin[45Pi/180]//Simplify
-
-System`TrigToRadicalsDump`sin[48Pi/180]//Simplify
-
+System`TrigToRadicalsDump`sin[60Pi/180]//Simplify
 
 
-
-
-
-
-
-
-System`TrigToRadicalsDump`sin[51Pi/180]/.rule//FullSimplify
-
-
-
-
-System`TrigToRadicalsDump`sin[54Pi/180]/.rule//FullSimplify
-
-
-System`TrigToRadicalsDump`sin[57Pi/180]/.rule//FullSimplify
-
-
-System`TrigToRadicalsDump`sin[60Pi/180]/.rule//FullSimplify
-
-
-
-
-
-System`TrigToRadicalsDump`sin[63Pi/180]/.rule//FullSimplify
-
-
-System`TrigToRadicalsDump`sin[66Pi/180]/.rule//FullSimplify
-
-System`TrigToRadicalsDump`sin[69Pi/180]/.rule//FullSimplify
-
-
-
-
-
-System`TrigToRadicalsDump`sin[72Pi/180]/.rule//FullSimplify
-
-
-System`TrigToRadicalsDump`sin[75Pi/180]/.rule//FullSimplify
-
-
-System`TrigToRadicalsDump`sin[78Pi/180]/.rule//FullSimplify
-
-
-
-
-
-
-
-System`TrigToRadicalsDump`sin[81Pi/180]/.rule//FullSimplify
-
-System`TrigToRadicalsDump`sin[84Pi/180]/.rule//FullSimplify
-
-
-System`TrigToRadicalsDump`sin[87Pi/180]/.rule//FullSimplify
-
-System`TrigToRadicalsDump`sin[90Pi/180]/.rule//FullSimplify
+MinimalPolynomial[Sin[18Pi/180],x]
+MinimalPolynomial[Sin[54Pi/180],x]
+System`TrigToRadicalsDump`sin[18Pi/180]//Simplify
+System`TrigToRadicalsDump`sin[54Pi/180]//Simplify
 
 
 
