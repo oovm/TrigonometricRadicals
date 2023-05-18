@@ -148,7 +148,7 @@ $$
 
 $$
 \begin{aligned}
-    \cos 9°   &= +\frac{\sqrt{2}}{8} \left(\sqrt{10-2\sqrt{5}}+\sqrt{5}+1\right)\\
+    \cos 9°   &= +\frac{\sqrt{2}}{4} \left(\sqrt{10-2\sqrt{5}}+\sqrt{5}+1\right)\\
     \cos 27°  &= +\frac{1}{8} \left(2\sqrt{5+\sqrt{5}}+\sqrt{10}-\sqrt{2}\right)\\
     \cos 63°  &= +\frac{1}{8} \left(2\sqrt{5+\sqrt{5}}-\sqrt{10}+\sqrt{2}\right)\\
     \cos 81°  &= -\frac{1}{8} \left(2\sqrt{5-\sqrt{5}}-\sqrt{10}-\sqrt{2}\right)\\
@@ -169,13 +169,13 @@ $$
 
 $$
 \begin{aligned}
-    \cos 3°  &= +\frac{1}{2} \sqrt{\frac{1}{2} \sqrt{\sqrt{5}+\sqrt{6\sqrt{5}+30}+7}+2}\\
-    \cos 21° &= +\frac{1}{8} \left(2\sqrt{5+\sqrt{5}}+\sqrt{10}-\sqrt{2}\right)\\
-    \cos 33° &= +\frac{1}{8} \left(2\sqrt{5+\sqrt{5}}-\sqrt{10}+\sqrt{2}\right)\\
-    \cos 39° &= -\frac{1}{8} \left(2\sqrt{5-\sqrt{5}}-\sqrt{10}-\sqrt{2}\right)\\
-    \cos 51° &= +\frac{1}{8} \left(2\sqrt{5-\sqrt{5}}-\sqrt{10}-\sqrt{2}\right)\\
-    \cos 57° &= -\frac{1}{8} \left(2\sqrt{5+\sqrt{5}}-\sqrt{10}+\sqrt{2}\right)\\
-    \cos 69° &= -\frac{1}{8} \left(2\sqrt{5+\sqrt{5}}+\sqrt{10}-\sqrt{2}\right)\\
-    \cos 87° &= -\frac{1}{8} \left(2\sqrt{5-\sqrt{5}}+\sqrt{10}+\sqrt{2}\right)\\
+    \cos 3°  &= \frac{1}{4} \sqrt{8+2\sqrt{7+\sqrt{5}+\sqrt{30+6\sqrt{5}}}}\\
+    \cos 21° &= \frac{1}{4} \sqrt{8+2\sqrt{7-\sqrt{5}+\sqrt{30-6\sqrt{5}}}}\\
+    \cos 33° &= \frac{1}{4} \sqrt{8+2\sqrt{7+\sqrt{5}-\sqrt{30+6\sqrt{5}}}}\\
+    \cos 39° &= \frac{1}{4} \sqrt{8+2\sqrt{7-\sqrt{5}-\sqrt{30-6\sqrt{5}}}}\\
+    \cos 51° &= \frac{1}{4} \sqrt{8-2\sqrt{7-\sqrt{5}-\sqrt{30-6\sqrt{5}}}}\\
+    \cos 57° &= \frac{1}{4} \sqrt{8-2\sqrt{7+\sqrt{5}-\sqrt{30+6\sqrt{5}}}}\\
+    \cos 69° &= \frac{1}{4} \sqrt{8-2\sqrt{7-\sqrt{5}+\sqrt{30-6\sqrt{5}}}}\\
+    \cos 87° &= \frac{1}{4} \sqrt{8-2\sqrt{7+\sqrt{5}+\sqrt{30+6\sqrt{5}}}}\\
 \end{aligned}
 $$
