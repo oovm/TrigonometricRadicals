@@ -96,7 +96,7 @@ System`TrigToRadicalsDump`sin[84Pi/180]//Simplify
 180-48
 
 
-ArcCos[NSolve[1-32 x^2+224 x^4-448 x^6+256 x^8,x][[All,All,-1]]]*180/Pi
+ArcCos[NSolve[1-32 x^2+224 x^4-448 x^6+256 x^8,x][[All,All,-1]]]*180/Pi//Flatten//Round//Sort
 
 
 MinimalPolynomial[Cos[6Pi/180],x]
@@ -111,4 +111,4 @@ System`TrigToRadicalsDump`cos[138Pi/180]//Simplify
 System`TrigToRadicalsDump`cos[174Pi/180]//Simplify
 
 
-Solve[{30==a^2+b, 6 Sqrt[5]==2 a Sqrt[b]},{a,b}]//FullSimplify
+Solve[{5==a^2+b,  Sqrt[5]==2 a Sqrt[b]},{a,b}]//FullSimplify
