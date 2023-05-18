@@ -107,58 +107,14 @@ System`TrigToRadicalsDump`sin[72Pi/180]//Simplify
 
 
 
-MinimalPolynomial[Cos[0Pi/180],x]
-MinimalPolynomial[Cos[60Pi/180],x]
-MinimalPolynomial[Cos[90Pi/180],x]
-MinimalPolynomial[Cos[120Pi/180],x]
-MinimalPolynomial[Cos[180Pi/180],x]
-System`TrigToRadicalsDump`cos[0Pi/180]//Simplify
-System`TrigToRadicalsDump`cos[60Pi/180]//Simplify
-System`TrigToRadicalsDump`cos[90Pi/180]//Simplify
-System`TrigToRadicalsDump`cos[120Pi/180]//Simplify
-System`TrigToRadicalsDump`cos[180Pi/180]//Simplify
-
-
-(-3+4 x^2)(-1+2 x^2)//Expand
-
-
-MinimalPolynomial[Cos[30Pi/180],x]
-MinimalPolynomial[Cos[45Pi/180],x]
-MinimalPolynomial[Cos[135Pi/180],x]
-MinimalPolynomial[Cos[150Pi/180],x]
-System`TrigToRadicalsDump`cos[30Pi/180]//Simplify
-System`TrigToRadicalsDump`cos[45Pi/180]//Simplify
-System`TrigToRadicalsDump`cos[135Pi/180]//Simplify
-System`TrigToRadicalsDump`cos[150Pi/180]//Simplify
-
-
-(-1-2 x+4 x^2)(-1+2 x+4 x^2)
-
-
-(-1-2 x+4 x^2)(-1+2 x+4 x^2)//Expand
-
-
-MinimalPolynomial[Cos[36Pi/180],x]
-MinimalPolynomial[Cos[72Pi/180],x]
-MinimalPolynomial[Cos[108Pi/180],x]
-MinimalPolynomial[Cos[144Pi/180],x]
-System`TrigToRadicalsDump`cos[36Pi/180]//Simplify
-System`TrigToRadicalsDump`cos[72Pi/180]//Simplify
-System`TrigToRadicalsDump`cos[108Pi/180]//Simplify
-System`TrigToRadicalsDump`cos[144Pi/180]//Simplify
-
-
-MinimalPolynomial[Sin[18Pi/180],x]
-MinimalPolynomial[Sin[54Pi/180],x]
-System`TrigToRadicalsDump`sin[18Pi/180]//Simplify
-System`TrigToRadicalsDump`sin[54Pi/180]//Simplify
-
-
-MinimalPolynomial[Sin[15Pi/180],x]
-MinimalPolynomial[Sin[75Pi/180],x]
-
-System`TrigToRadicalsDump`sin[15Pi/180]//Simplify
-System`TrigToRadicalsDump`sin[75Pi/180]//Simplify
+MinimalPolynomial[Cos[15Pi/180],x]
+MinimalPolynomial[Cos[75Pi/180],x]
+MinimalPolynomial[Cos[105Pi/180],x]
+MinimalPolynomial[Cos[165Pi/180],x]
+System`TrigToRadicalsDump`cos[15Pi/180]//Simplify
+System`TrigToRadicalsDump`cos[75Pi/180]//Simplify
+System`TrigToRadicalsDump`cos[15Pi/180]//Simplify
+System`TrigToRadicalsDump`cos[75Pi/180]//Simplify
 
 
 
