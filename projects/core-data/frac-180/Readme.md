@@ -191,11 +191,11 @@ $$
 
 $$
 \begin{aligned}
-    \cos 5°  &= \frac{\sqrt{2}}{4} \left((1-i)\omega^2+(1+i)\omega^2\right)\\
-    \cos 25° &= \frac{\sqrt{2}}{4} \left((1-i)\omega^2+(1+i)\omega^2\right)\\
-    \cos 35° &= \frac{\sqrt{2}}{4} \left((1-i)\omega^2+(1+i)\omega^2\right)\\
-    \cos 55° &= \frac{\sqrt{2}}{4} \left((1-i)\omega^2+(1+i)\omega^2\right)\\
-    \cos 65° &= \frac{\sqrt{2}}{4} \left((1-i)\omega^2+(1+i)\omega^2\right)\\
-    \cos 85° &= \frac{\sqrt{2}}{4} \left((1-i)\omega^2+(1+i)\omega^2\right)\\
+    \cos 5°  &= +\frac{\sqrt{2}}{4} \left((1+i)\omega^8+(1-i)\omega\right)\\
+    \cos 25° &= -\frac{\sqrt{2}}{4} \left((1-i)\omega^5+(1+i)\omega^4\right)\\
+    \cos 35° &= +\frac{\sqrt{2}}{4} \left((1+i)\omega^7+(1-i)\omega^2\right)\\
+    \cos 55° &= -\frac{\sqrt{2}}{4} \left((1-i)\omega^7+(1+i)\omega^2\right)\\
+    \cos 65° &= -\frac{\sqrt{2}}{4} \left((1+i)\omega^5+(1-i)\omega^4\right)\\
+    \cos 85° &= +\frac{\sqrt{2}}{4} \left((1-i)\omega^8+(1+i)\omega\right)\\
 \end{aligned}
 $$
