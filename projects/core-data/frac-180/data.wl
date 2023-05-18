@@ -52,24 +52,6 @@ System`TrigToRadicalsDump`sin[89Pi/180]/.rule//FullSimplify
 
 
 $Line = 0;
-System`TrigToRadicalsDump`sin[5Pi/180]/.rule//FullSimplify
-System`TrigToRadicalsDump`sin[10Pi/180]/.rule//FullSimplify
-System`TrigToRadicalsDump`sin[20Pi/180]/.rule//FullSimplify
-System`TrigToRadicalsDump`sin[25Pi/180]/.rule//FullSimplify
-System`TrigToRadicalsDump`sin[35Pi/180]/.rule//FullSimplify
-System`TrigToRadicalsDump`sin[40Pi/180]/.rule//FullSimplify
-System`TrigToRadicalsDump`sin[50Pi/180]/.rule//FullSimplify
-System`TrigToRadicalsDump`sin[55Pi/180]/.rule//FullSimplify
-System`TrigToRadicalsDump`sin[65Pi/180]/.rule//FullSimplify
-System`TrigToRadicalsDump`sin[70Pi/180]/.rule//FullSimplify
-System`TrigToRadicalsDump`sin[80Pi/180]/.rule//FullSimplify
-System`TrigToRadicalsDump`sin[85Pi/180]/.rule//FullSimplify
-
-
-MinimalPolynomial[Sin[3Pi/180],x]
-
-
-$Line = 0;
 System`TrigToRadicalsDump`sin[3Pi/180]//Simplify
 System`TrigToRadicalsDump`sin[21Pi/180]//Simplify
 System`TrigToRadicalsDump`sin[33Pi/180]//Simplify
@@ -80,35 +62,27 @@ System`TrigToRadicalsDump`sin[69Pi/180]//Simplify
 System`TrigToRadicalsDump`sin[87Pi/180]//Simplify
 
 
-System`TrigToRadicalsDump`sin[9Pi/180]//Simplify
-System`TrigToRadicalsDump`sin[12Pi/180]//Simplify
-System`TrigToRadicalsDump`sin[24Pi/180]//Simplify
-System`TrigToRadicalsDump`sin[27Pi/180]//Simplify
-System`TrigToRadicalsDump`sin[48Pi/180]//Simplify
-System`TrigToRadicalsDump`sin[63Pi/180]//Simplify
-System`TrigToRadicalsDump`sin[81Pi/180]//Simplify
-System`TrigToRadicalsDump`sin[84Pi/180]//Simplify
-
-
 90-6
 90-78
 180-24
 180-48
 
 
-ArcCos[NSolve[1-32 x^2+224 x^4-448 x^6+256 x^8,x][[All,All,-1]]]*180/Pi//Flatten//Round//Sort
+eqn = MinimalPolynomial[Cos[2Pi/180],x];
+ArcCos[NSolve[eqn,x][[All,All,-1]]]*180/Pi//Flatten//Round//Sort
 
 
-MinimalPolynomial[Cos[6Pi/180],x]
-
-System`TrigToRadicalsDump`cos[6Pi/180]//Simplify
-System`TrigToRadicalsDump`cos[42Pi/180]//Simplify
-System`TrigToRadicalsDump`cos[66Pi/180]//Simplify
-System`TrigToRadicalsDump`cos[78Pi/180]//Simplify
-System`TrigToRadicalsDump`cos[102Pi/180]//Simplify
-System`TrigToRadicalsDump`cos[114Pi/180]//Simplify
-System`TrigToRadicalsDump`cos[138Pi/180]//Simplify
-System`TrigToRadicalsDump`cos[174Pi/180]//Simplify
+MinimalPolynomial[Cos[2Pi/180],x]
+System`TrigToRadicalsDump`cos[2Pi/180]/.rule//Simplify
+System`TrigToRadicalsDump`cos[14Pi/180]/.rule//Simplify
+System`TrigToRadicalsDump`cos[22Pi/180]/.rule//Simplify
+System`TrigToRadicalsDump`cos[26Pi/180]/.rule//Simplify
+System`TrigToRadicalsDump`cos[34Pi/180]/.rule//Simplify
+System`TrigToRadicalsDump`cos[38Pi/180]/.rule//Simplify
 
 
-Solve[{5==a^2+b,  Sqrt[5]==2 a Sqrt[b]},{a,b}]//FullSimplify
+System`TrigToRadicalsDump`cos[3Pi/180]
+ResourceFunction["RadicalDenest"][Sqrt[2]]
+
+
+System`TrigToRadicalsDump`cos[3Pi/180]/4//FullSimplify

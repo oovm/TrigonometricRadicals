@@ -10,6 +10,6 @@
 
 ### n=7
 
-$$(\mathbb {Z}/7\mathbb{Z})^{×}≅C_3×C_{2},\,s = \omega^3$$
+$$(\mathbb {Z}/7\mathbb{Z})^{×}≅C_3×C_{2},\,s = ω^3$$
 
 

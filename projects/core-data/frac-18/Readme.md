@@ -2,7 +2,7 @@
 
 
 
-$$\omega=\sqrt[3]{\frac{-1+i \sqrt{3}}{2}}$$
+$$ω=\sqrt[3]{\frac{-1+i \sqrt{3}}{2}}$$
 
 
 
