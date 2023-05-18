@@ -90,45 +90,25 @@ System`TrigToRadicalsDump`sin[81Pi/180]//Simplify
 System`TrigToRadicalsDump`sin[84Pi/180]//Simplify
 
 
-System`TrigToRadicalsDump`sin[6Pi/180]//Simplify
-System`TrigToRadicalsDump`sin[42Pi/180]//Simplify
-System`TrigToRadicalsDump`sin[66Pi/180]//Simplify
-System`TrigToRadicalsDump`sin[78Pi/180]//Simplify
-
-
-90+24
-90+48
+90-6
+90-78
 180-24
 180-48
 
 
-ArcCos[NSolve[1+8 x-16 x^2-8 x^3+16 x^4,x][[All,All,-1]]]*180/Pi
+ArcCos[NSolve[1-32 x^2+224 x^4-448 x^6+256 x^8,x][[All,All,-1]]]*180/Pi
 
 
-MinimalPolynomial[Cos[24Pi/180],x]
-MinimalPolynomial[Cos[48Pi/180],x]
-MinimalPolynomial[Cos[96Pi/180],x]
-MinimalPolynomial[Cos[168Pi/180],x]
+MinimalPolynomial[Cos[6Pi/180],x]
 
-MinimalPolynomial[Cos[12Pi/180],x]
-MinimalPolynomial[Cos[84Pi/180],x]
-MinimalPolynomial[Cos[132Pi/180],x]
-MinimalPolynomial[Cos[156Pi/180],x]
-
-System`TrigToRadicalsDump`cos[24Pi/180]//Simplify
-System`TrigToRadicalsDump`cos[48Pi/180]//Simplify
-System`TrigToRadicalsDump`cos[96Pi/180]//Simplify
-System`TrigToRadicalsDump`cos[168Pi/180]//Simplify
-
-System`TrigToRadicalsDump`cos[1Pi/180]//Simplify
-System`TrigToRadicalsDump`cos[84Pi/180]//Simplify
-System`TrigToRadicalsDump`cos[132Pi/180]//Simplify
-System`TrigToRadicalsDump`cos[156Pi/180]//Simplify
-
-
-Sqrt[30-6 Sqrt[5]]
-
-(a-Sqrt[b])^2//Expand
+System`TrigToRadicalsDump`cos[6Pi/180]//Simplify
+System`TrigToRadicalsDump`cos[42Pi/180]//Simplify
+System`TrigToRadicalsDump`cos[66Pi/180]//Simplify
+System`TrigToRadicalsDump`cos[78Pi/180]//Simplify
+System`TrigToRadicalsDump`cos[102Pi/180]//Simplify
+System`TrigToRadicalsDump`cos[114Pi/180]//Simplify
+System`TrigToRadicalsDump`cos[138Pi/180]//Simplify
+System`TrigToRadicalsDump`cos[174Pi/180]//Simplify
 
 
 Solve[{30==a^2+b, 6 Sqrt[5]==2 a Sqrt[b]},{a,b}]//FullSimplify
