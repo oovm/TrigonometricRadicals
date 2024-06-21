@@ -2,7 +2,9 @@
 
 rule={
 -1+I Sqrt[3]->2\[Omega],
--1-I Sqrt[3]->2\[Omega]^2
+-1-I Sqrt[3]->2\[Omega]^2,
+(\[Omega]^2)^(4/3)->\[Omega]^(5/3),
+(\[Omega]^2)^(1/3)->(\[Omega]^2)^(8/3)
 };
 Simplify`TrigToRealRadicals;
 
@@ -116,6 +118,4 @@ System`TrigToRadicalsDump`sin[87Pi/180]/.rule//FullSimplify
 System`TrigToRadicalsDump`sin[88Pi/180]/.rule//FullSimplify
 System`TrigToRadicalsDump`sin[89Pi/180]/.rule//FullSimplify
 System`TrigToRadicalsDump`sin[90Pi/180]/.rule//FullSimplify
-
-
 

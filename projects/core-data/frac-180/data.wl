@@ -73,7 +73,8 @@ ArcCos[NSolve[eqn,x][[All,All,-1]]]*180/Pi//Flatten//Round//Sort
 
 
 MinimalPolynomial[Cos[2Pi/180],x]
-System`TrigToRadicalsDump`cos[2Pi/180]/.rule//Simplify
+Simplify[System`TrigToRadicalsDump`cos[1Pi/180]/.rule]/.rule//FullSimplify
+Simplify[System`TrigToRadicalsDump`cos[2Pi/180]/.rule]/.rule//FullSimplify
 System`TrigToRadicalsDump`cos[14Pi/180]/.rule//Simplify
 System`TrigToRadicalsDump`cos[22Pi/180]/.rule//Simplify
 System`TrigToRadicalsDump`cos[26Pi/180]/.rule//Simplify
@@ -86,3 +87,6 @@ ResourceFunction["RadicalDenest"][Sqrt[2]]
 
 
 System`TrigToRadicalsDump`cos[3Pi/180]/4//FullSimplify
+
+
+{}
