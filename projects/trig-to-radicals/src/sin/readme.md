@@ -259,17 +259,17 @@ $$
 
 $$
 \begin{aligned}
-\sin\frac{π}{11} &\approx 0.281732\\
-\sin\frac{2π}{11} &\approx 0.515038\\
-\sin\frac{3π}{11} &\approx 0.757761\\
-\sin\frac{4π}{11} &\approx 0.951057\\
+\sin\frac{  π}{11} &\approx 0.281732\\
+\sin\frac{ 2π}{11} &\approx 0.515038\\
+\sin\frac{ 3π}{11} &\approx 0.757761\\
+\sin\frac{ 4π}{11} &\approx 0.951057\\
+\sin\frac{ 5π}{11} &\approx 0.987688\\
 
-\sin\frac{5π}{11} &\approx 0.987688\\
-
-\sin\frac{6π}{11} &\approx 0.951057\\
-\sin\frac{7π}{11} &\approx 0.757761\\
-\sin\frac{8π}{11} &\approx 0.515038\\
-\sin\frac{9π}{11} &\approx 0.281732\\
+\sin\frac{ 6π}{11} &\approx 0.951057\\
+\sin\frac{ 7π}{11} &\approx 0.757761\\
+\sin\frac{ 8π}{11} &\approx 0.515038\\
+\sin\frac{ 9π}{11} &\approx 0.281732\\
+\sin\frac{10π}{11} &\approx 0.281732\\
 \end{aligned}
 $$
 
