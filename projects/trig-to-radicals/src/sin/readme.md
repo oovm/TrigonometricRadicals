@@ -15,12 +15,6 @@ $$
 x-2=0
 $$
 
-伽罗瓦群:
-F
-$$
-G = \{e\}
-$$
-
 解得:
 
 $$
@@ -33,12 +27,6 @@ $$
 
 $$
 x^2-3 = 0
-$$
-
-伽罗瓦群:
-
-$$
-C_2
 $$
 
 解得:
@@ -58,12 +46,6 @@ $$
 x^2-2=0
 $$
 
-伽罗瓦群:
-
-$$
-C_2
-$$
-
 解得:
 
 $$
@@ -81,20 +63,14 @@ $$
 x^4-5 x^2+5 = 0
 $$
 
-伽罗瓦群:
-
-$$
-D_4
-$$
-
 解得:
 
 $$
 \begin{aligned}
-\sin\frac{ π}{5} &= \frac{1}{2}\sqrt{\frac{5-\sqrt{5}}{2}}\\
-\sin\frac{2π}{5} &= \frac{1}{2}\sqrt{\frac{5+\sqrt{5}}{2}}\\
-\sin\frac{3π}{5} &= \frac{1}{2}\sqrt{\frac{5+\sqrt{5}}{2}}\\
-\sin\frac{4π}{5} &= \frac{1}{2}\sqrt{\frac{5-\sqrt{5}}{2}}\\
+\sin\frac{ π}{5} &= \frac{1}{4}\sqrt{10-2\sqrt{5}}\\
+\sin\frac{2π}{5} &= \frac{1}{4}\sqrt{10+2\sqrt{5}}\\
+\sin\frac{3π}{5} &= \frac{1}{4}\sqrt{10+2\sqrt{5}}\\
+\sin\frac{4π}{5} &= \frac{1}{4}\sqrt{10-2\sqrt{5}}\\
 \end{aligned}
 $$
 
@@ -104,12 +80,6 @@ $$
 
 $$
 x - 1 = 0
-$$
-
-伽罗瓦群:
-
-$$
-S_3
 $$
 
 解得:
@@ -129,14 +99,7 @@ $$
 x^6-7 x^4+14 x^2-7 = 0
 $$
 
-伽罗瓦群:
-
-$$
-D_6
-$$
-
 解得:
-
 
 $$
 \begin{aligned}
@@ -164,12 +127,6 @@ $$
 x^4-4 x^2+2 = 0
 $$
 
-伽罗瓦群:
-
-$$
-D_4
-$$
-
 解得:
 
 $$
@@ -189,24 +146,19 @@ $$
 x^6-6 x^4+9 x^2-3 = 0
 $$
 
-伽罗瓦群:
-
-$$
-D_8
-$$
-
 解得:
+
 
 
 $$
 \begin{aligned}
-\sin\frac{π}{9}&=\frac{i}{2}\left(\sqrt[3]{\frac{1}{2}\left(1-i\sqrt{3}\right)}-\sqrt[3]{\frac{1}{2}\left(1+i\sqrt{3}\right)}\right)\\
-\sin\frac{2π}{9}&=\frac{i}{2}\left(ω^4\sqrt[3]{\frac{1}{2}\left(1-i\sqrt{3}\right)}+ω^5\sqrt[3]{\frac{1}{2}\left(1+i\sqrt{3}\right)}\right)\\
-\sin\frac{4π}{9}&=\frac{i}{2}\left(ω^5\sqrt[3]{\frac{1}{2}\left(1-i\sqrt{3}\right)}+ω^4\sqrt[3]{\frac{1}{2}\left(1+i\sqrt{3}\right)}\right)\\
+\sin\frac{π}{9}&=\frac{i}{4}\left(\sqrt[3]{4-4\sqrt{3}i}-\sqrt[3]{4+4\sqrt{3}i}\right)\\
+\sin\frac{2π}{9}&=\frac{i}{4}\left(ω^4\sqrt[3]{4-4\sqrt{3}i}+ω^5\sqrt[3]{4+4\sqrt{3}i}\right)\\
+\sin\frac{4π}{9}&=\frac{i}{4}\left(ω^5\sqrt[3]{4-4\sqrt{3}i}+ω^4\sqrt[3]{4+4\sqrt{3}i}\right)\\
 
-\sin\frac{5π}{9}&=\frac{i}{2}\left(ω^5\sqrt[3]{\frac{1}{2}\left(1-i\sqrt{3}\right)}+ω^4\sqrt[3]{\frac{1}{2}\left(1+i\sqrt{3}\right)}\right)\\
-\sin\frac{7π}{9}&=\frac{i}{2}\left(ω^4\sqrt[3]{\frac{1}{2}\left(1-i\sqrt{3}\right)}+ω^5\sqrt[3]{\frac{1}{2}\left(1+i\sqrt{3}\right)}\right)\\
-\sin\frac{8π}{9}&=\frac{i}{2}\left(\sqrt[3]{\frac{1}{2}\left(1-i\sqrt{3}\right)}-\sqrt[3]{\frac{1}{2}\left(1+i\sqrt{3}\right)}\right)\\
+\sin\frac{5π}{9}&=\frac{i}{4}\left(ω^5\sqrt[3]{4-4\sqrt{3}i}+ω^4\sqrt[3]{4+4\sqrt{3}i}\right)\\
+\sin\frac{7π}{9}&=\frac{i}{4}\left(ω^4\sqrt[3]{4-4\sqrt{3}i}+ω^5\sqrt[3]{4+4\sqrt{3}i}\right)\\
+\sin\frac{8π}{9}&=\frac{i}{4}\left(\sqrt[3]{4-4\sqrt{3}i}-\sqrt[3]{4+4\sqrt{3}i}\right)\\
 \end{aligned}
 $$
 
@@ -222,12 +174,6 @@ $$
 
 $$
 x^2+x-1 = 0
-$$
-
-伽罗瓦群:
-
-$$
-D_{10}
 $$
 
 解得:
@@ -247,12 +193,6 @@ $$
 
 $$
 x^{10}-11 x^8+44 x^6-77 x^4+55 x^2-11=0
-$$
-
-伽罗瓦群:
-
-$$
-D_{10}
 $$
 
 解得:
@@ -281,12 +221,6 @@ $$
 x^4-4 x^2+1=0
 $$
 
-伽罗瓦群:
-
-$$
-D_{12}
-$$
-
 解得:
 
 $$
@@ -304,12 +238,6 @@ $$
 
 $$
 x^{12}-13 x^{10}+65 x^8-156 x^6+182 x^4-91 x^2+13=0
-$$
-
-伽罗瓦群:
-
-$$
-D_{12}
 $$
 
 解得:
@@ -337,12 +265,6 @@ $$
 x^3-x^2-2 x+1=0
 $$
 
-伽罗瓦群:
-
-$$
-D_{14}
-$$
-
 解得:
 
 $$
@@ -362,12 +284,6 @@ $$
 
 $$
 x^8-7 x^6+14 x^4-8 x^2+1=0
-$$
-
-伽罗瓦群:
-
-$$
-D_{14}
 $$
 
 解得:
@@ -395,12 +311,6 @@ $$
 x^8-8 x^6+20 x^4-16 x^2+2=0
 $$
 
-伽罗瓦群:
-
-$$
-D_{16}
-$$
-
 解得:
 
 $$
@@ -417,3 +327,36 @@ $$
 \end{aligned}
 $$
 
+
+
+# `n = 17`
+
+最小多项式:
+
+$$
+x^{16}-17 x^{14}+119 x^{12}-442 x^{10}+935 x^8-1122 x^6+714 x^4-204 x^2+17=0
+$$
+
+解得:
+
+$$
+\begin{aligned}
+\sin\frac{ π}{17}&=\frac{1}{8}\sqrt{34-2\sqrt{17}-2\sqrt{34-2\sqrt{17}}-4\sqrt{17+3\sqrt{17}-\sqrt{34-2\sqrt{17}}-2\sqrt{34+2\sqrt{17}}}}\\
+\sin\frac{2π}{17}&=\frac{1}{8}\sqrt{34-2\sqrt{17}+2\sqrt{34-2\sqrt{17}}-4\sqrt{17+3\sqrt{17}+\sqrt{34-2\sqrt{17}}+2\sqrt{34+2\sqrt{17}}}}\\
+\sin\frac{3π}{17}&=\frac{1}{8}\sqrt{34+2\sqrt{17}-2\sqrt{34+2\sqrt{17}}-4\sqrt{17-3\sqrt{17}-\sqrt{34+2\sqrt{17}}+2\sqrt{34-2\sqrt{17}}}}\\
+\sin\frac{4π}{17}&=\frac{1}{8}\sqrt{34-2\sqrt{17}-2\sqrt{34-2\sqrt{17}}+4\sqrt{17+3\sqrt{17}-\sqrt{34-2\sqrt{17}}-2\sqrt{34+2\sqrt{17}}}}\\
+\sin\frac{5π}{17}&=\frac{1}{8}\sqrt{34+2\sqrt{17}-2\sqrt{34+2\sqrt{17}}+4\sqrt{17-3\sqrt{17}-\sqrt{34+2\sqrt{17}}+2\sqrt{34-2\sqrt{17}}}}\\
+\sin\frac{6π}{17}&=\frac{1}{8}\sqrt{34+2\sqrt{17}+2\sqrt{34+2\sqrt{17}}-4\sqrt{17-3\sqrt{17}+\sqrt{34+2\sqrt{17}}-2\sqrt{34-2\sqrt{17}}}}\\
+\sin\frac{7π}{17}&=\frac{1}{8}\sqrt{34+2\sqrt{17}+2\sqrt{34+2\sqrt{17}}+4\sqrt{17-3\sqrt{17}+\sqrt{34+2\sqrt{17}}-2\sqrt{34-2\sqrt{17}}}}\\
+\sin\frac{8π}{17}&=\frac{1}{8}\sqrt{34-2\sqrt{17}+2\sqrt{34-2\sqrt{17}}+4\sqrt{17+3\sqrt{17}+\sqrt{34-2\sqrt{17}}+2\sqrt{34+2\sqrt{17}}}}\\
+
+\sin\frac{ 9π}{17}&=\frac{1}{8}\sqrt{34-2\sqrt{17}+2\sqrt{34-2\sqrt{17}}+4\sqrt{17+3\sqrt{17}+\sqrt{34-2\sqrt{17}}+2\sqrt{34+2\sqrt{17}}}}\\
+\sin\frac{10π}{17}&=\frac{1}{8}\sqrt{34+2\sqrt{17}-2\sqrt{34+2\sqrt{17}}+4\sqrt{17-3\sqrt{17}-\sqrt{34+2\sqrt{17}}+2\sqrt{34-2\sqrt{17}}}}\\
+\sin\frac{11π}{17}&=\frac{1}{8}\sqrt{34+2\sqrt{17}+2\sqrt{34+2\sqrt{17}}-4\sqrt{17-3\sqrt{17}+\sqrt{34+2\sqrt{17}}-2\sqrt{34-2\sqrt{17}}}}\\
+\sin\frac{12π}{17}&=\frac{1}{8}\sqrt{34+2\sqrt{17}-2\sqrt{34+2\sqrt{17}}+4\sqrt{17-3\sqrt{17}-\sqrt{34+2\sqrt{17}}+2\sqrt{34-2\sqrt{17}}}}\\
+\sin\frac{13π}{17}&=\frac{1}{8}\sqrt{34-2\sqrt{17}-2\sqrt{34-2\sqrt{17}}+4\sqrt{17+3\sqrt{17}-\sqrt{34-2\sqrt{17}}-2\sqrt{34+2\sqrt{17}}}}\\
+\sin\frac{14π}{17}&=\frac{1}{8}\sqrt{34+2\sqrt{17}-2\sqrt{34+2\sqrt{17}}-4\sqrt{17-3\sqrt{17}-\sqrt{34+2\sqrt{17}}+2\sqrt{34-2\sqrt{17}}}}\\
+\sin\frac{15π}{17}&=\frac{1}{8}\sqrt{34-2\sqrt{17}+2\sqrt{34-2\sqrt{17}}-4\sqrt{17+3\sqrt{17}+\sqrt{34-2\sqrt{17}}+2\sqrt{34+2\sqrt{17}}}}\\
+\sin\frac{16π}{17}&=\frac{1}{8}\sqrt{34-2\sqrt{17}-2\sqrt{34-2\sqrt{17}}-4\sqrt{17+3\sqrt{17}-\sqrt{34-2\sqrt{17}}-2\sqrt{34+2\sqrt{17}}}}\\
+\end{aligned}
+$$
