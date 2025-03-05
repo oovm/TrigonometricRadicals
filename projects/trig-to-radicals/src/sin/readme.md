@@ -137,15 +137,23 @@ $$
 
 解得:
 
+
 $$
 \begin{aligned}
-\sin\frac{π}{7} &\approx 0.4339\\
-\sin\frac{2π}{7} &\approx 0.781831\\
-\sin\frac{3π}{7} &\approx 0.974928\\
-\sin\frac{4π}{7} &\approx 0.974928\\
-\sin\frac{5π}{7} &\approx 0.781831\\
-\sin\frac{6π}{7} &\approx 0.4339\\
+\sin\frac{ π}{7} &=\frac{\sqrt{7}}{6} \left(ω^3+\sqrt[3]{\frac{1}{14} \left(13-3\sqrt{3}i\right)}+\sqrt[3]{\frac{1}{14} \left(13+3 \sqrt{3} i\right)}\right)\\
+\sin\frac{2π}{7} &=\frac{\sqrt{7}}{6} \left(1+ω\sqrt[3]{\frac{1}{14} \left(13+3\sqrt{3}i\right)}+ω^5\sqrt[3]{\frac{1}{14} \left(13-3 \sqrt{3} i\right)}\right)\\
+\sin\frac{3π}{7} &=\frac{\sqrt{7}}{6} \left(1+ω\sqrt[3]{\frac{1}{14} \left(13-3\sqrt{3}i\right)}+ω^5\sqrt[3]{\frac{1}{14} \left(13+3 \sqrt{3} i\right)}\right)\\
+
+\sin\frac{4π}{7} &=\frac{\sqrt{7}}{6} \left(1+ω\sqrt[3]{\frac{1}{14} \left(13-3\sqrt{3}i\right)}+ω^5\sqrt[3]{\frac{1}{14} \left(13+3 \sqrt{3} i\right)}\right)\\
+\sin\frac{5π}{7} &=\frac{\sqrt{7}}{6} \left(1+ω\sqrt[3]{\frac{1}{14} \left(13+3\sqrt{3}i\right)}+ω^5\sqrt[3]{\frac{1}{14} \left(13-3 \sqrt{3} i\right)}\right)\\
+\sin\frac{6π}{7} &=\frac{\sqrt{7}}{6} \left(ω^3+\sqrt[3]{\frac{1}{14} \left(13-3\sqrt{3}i\right)}+\sqrt[3]{\frac{1}{14} \left(13+3 \sqrt{3} i\right)}\right)\\
 \end{aligned}
+$$
+
+其中
+
+$$
+ω =\frac{1}{2}+\frac{\sqrt{3}}{2}i
 $$
 
 # `n = 8`
