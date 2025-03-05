@@ -355,19 +355,18 @@ $$
 
 解得:
 
+
 $$
 \begin{aligned}
-\sin\frac{π}{15} &\approx 0.207912\\
-\sin\frac{2π}{15} &\approx 0.404508\\
-\sin\frac{3π}{15} &\approx 0.5\\
-\sin\frac{4π}{15} &\approx 0.659346\\
-\sin\frac{5π}{15} &\approx 0.866025\\
-\sin\frac{6π}{15} &\approx 0.965926\\
-\sin\frac{9π}{15} &\approx 0.866025\\
-\sin\frac{10π}{15} &\approx 0.659346\\
-\sin\frac{12π}{15} &\approx 0.5\\
-\sin\frac{13π}{15} &\approx 0.404508\\
-\sin\frac{14π}{15} &\approx 0.207912\\
+\sin\frac{  π}{15} &=\frac{1}{8} \left(\sqrt{3}-\sqrt{15}+\sqrt{10+2\sqrt{5}}\right)\\
+\sin\frac{ 2π}{15} &=\frac{1}{8} \left(\sqrt{3}+\sqrt{15}-\sqrt{10-2\sqrt{5}}\right)\\
+\sin\frac{ 4π}{15} &=\frac{1}{8} \left(\sqrt{15}-\sqrt{3}+\sqrt{10+2\sqrt{5}}\right)\\
+\sin\frac{ 7π}{15} &=\frac{1}{8} \left(\sqrt{15}+\sqrt{3}+\sqrt{10-2\sqrt{5}}\right)\\
+
+\sin\frac{ 8π}{15} &=\frac{1}{8} \left(\sqrt{15}+\sqrt{3}+\sqrt{10-2\sqrt{5}}\right)\\
+\sin\frac{11π}{15} &=\frac{1}{8} \left(\sqrt{15}-\sqrt{3}+\sqrt{10+2\sqrt{5}}\right)\\
+\sin\frac{13π}{15} &=\frac{1}{8} \left(\sqrt{3}+\sqrt{15}-\sqrt{10-2\sqrt{5}}\right)\\
+\sin\frac{14π}{15} &=\frac{1}{8} \left(\sqrt{3}-\sqrt{15}+\sqrt{10+2\sqrt{5}}\right)\\
 \end{aligned}
 $$
 
@@ -389,11 +388,15 @@ $$
 
 $$
 \begin{aligned}
-\sin\frac{π}{16} &= \frac{\sqrt{2 - \sqrt{2}}}{2}\\
-\sin\frac{3π}{16} &= \frac{\sqrt{2 + \sqrt{2}}}{2}\\
-\sin\frac{5π}{16} &= \frac{\sqrt{2 + \sqrt{2}}}{2}\\
-\sin\frac{7π}{16} &= \frac{\sqrt{2 - \sqrt{2}}}{2}\\
+\sin\frac{  π}{16} &= \frac{1}{2} \sqrt{2-\sqrt{2+\sqrt{2}}}\\
+\sin\frac{ 3π}{16} &= \frac{1}{2} \sqrt{2-\sqrt{2-\sqrt{2}}}\\
+\sin\frac{ 5π}{16} &= \frac{1}{2} \sqrt{2+\sqrt{2-\sqrt{2}}}\\
+\sin\frac{ 7π}{16} &= \frac{1}{2} \sqrt{2+\sqrt{2+\sqrt{2}}}\\
+
+\sin\frac{ 9π}{16} &= \frac{1}{2} \sqrt{2+\sqrt{2+\sqrt{2}}}\\
+\sin\frac{11π}{16} &= \frac{1}{2} \sqrt{2+\sqrt{2-\sqrt{2}}}\\
+\sin\frac{13π}{16} &= \frac{1}{2} \sqrt{2-\sqrt{2-\sqrt{2}}}\\
+\sin\frac{15π}{16} &= \frac{1}{2} \sqrt{2-\sqrt{2+\sqrt{2}}}\\
 \end{aligned}
 $$
 
-以上为 \( n = 1 \) 到 \( n = 16 \) 的三角函数速查表。
