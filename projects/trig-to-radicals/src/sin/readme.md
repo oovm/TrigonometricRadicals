@@ -197,16 +197,23 @@ $$
 
 解得:
 
+
 $$
 \begin{aligned}
-\sin\frac{π}{9} &\approx 0.342020\\
-\sin\frac{2π}{9} &\approx 0.642788\\
-\sin\frac{3π}{9} &\approx 0.866025\\
-\sin\frac{4π}{9} &\approx 0.984808\\
-\sin\frac{5π}{9} &\approx 0.866025\\
-\sin\frac{7π}{9} &\approx 0.642788\\
-\sin\frac{8π}{9} &\approx 0.342020\\
+\sin\frac{π}{9}&=\frac{i}{2}\left(\sqrt[3]{\frac{1}{2}\left(1-i\sqrt{3}\right)}-\sqrt[3]{\frac{1}{2}\left(1+i\sqrt{3}\right)}\right)\\
+\sin\frac{2π}{9}&=\frac{i}{2}\left(ω^4\sqrt[3]{\frac{1}{2}\left(1-i\sqrt{3}\right)}+ω^5\sqrt[3]{\frac{1}{2}\left(1+i\sqrt{3}\right)}\right)\\
+\sin\frac{4π}{9}&=\frac{i}{2}\left(ω^5\sqrt[3]{\frac{1}{2}\left(1-i\sqrt{3}\right)}+ω^4\sqrt[3]{\frac{1}{2}\left(1+i\sqrt{3}\right)}\right)\\
+
+\sin\frac{5π}{9}&=\frac{i}{2}\left(ω^5\sqrt[3]{\frac{1}{2}\left(1-i\sqrt{3}\right)}+ω^4\sqrt[3]{\frac{1}{2}\left(1+i\sqrt{3}\right)}\right)\\
+\sin\frac{7π}{9}&=\frac{i}{2}\left(ω^4\sqrt[3]{\frac{1}{2}\left(1-i\sqrt{3}\right)}+ω^5\sqrt[3]{\frac{1}{2}\left(1+i\sqrt{3}\right)}\right)\\
+\sin\frac{8π}{9}&=\frac{i}{2}\left(\sqrt[3]{\frac{1}{2}\left(1-i\sqrt{3}\right)}-\sqrt[3]{\frac{1}{2}\left(1+i\sqrt{3}\right)}\right)\\
 \end{aligned}
+$$
+
+其中
+
+$$
+ω=\frac{1}{2}+\frac{\sqrt{3}}{2}i
 $$
 
 # `n = 10`
