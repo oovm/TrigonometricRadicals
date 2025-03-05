@@ -166,10 +166,10 @@ $$
 
 $$
 \begin{aligned}
-\sin\frac{π}{8} &= \frac{\sqrt{2 - \sqrt{2}}}{2}\\
-\sin\frac{3π}{8} &= \frac{\sqrt{2 + \sqrt{2}}}{2}\\
-\sin\frac{5π}{8} &= \frac{\sqrt{2 + \sqrt{2}}}{2}\\
-\sin\frac{7π}{8} &= \frac{\sqrt{2 - \sqrt{2}}}{2}\\
+\sin\frac{ π}{8} &= \frac{1}{2}\sqrt{2 - \sqrt{2}}\\
+\sin\frac{3π}{8} &= \frac{1}{2}\sqrt{2 + \sqrt{2}}\\
+\sin\frac{5π}{8} &= \frac{1}{2}\sqrt{2 + \sqrt{2}}\\
+\sin\frac{7π}{8} &= \frac{1}{2}\sqrt{2 - \sqrt{2}}\\
 \end{aligned}
 $$
 
@@ -219,10 +219,10 @@ $$
 
 $$
 \begin{aligned}
-\sin\frac{π}{10} &= \frac{\sqrt{5}-1}{4}\\
-\sin\frac{3π}{10} &= \frac{\sqrt{5}+1}{4}\\
-\sin\frac{7π}{10} &= \frac{\sqrt{5}+1}{4}\\
-\sin\frac{9π}{10} &= \frac{\sqrt{5}-1}{4}\\
+\sin\frac{ π}{10} &= \frac{1}{4}(\sqrt{5}-1)\\
+\sin\frac{3π}{10} &= \frac{1}{4}(\sqrt{5}+1)\\
+\sin\frac{7π}{10} &= \frac{1}{4}(\sqrt{5}+1)\\
+\sin\frac{9π}{10} &= \frac{1}{4}(\sqrt{5}-1)\\
 \end{aligned}
 $$
 
@@ -274,10 +274,10 @@ $$
 
 $$
 \begin{aligned}
-\sin\frac{π}{12} &= \frac{\sqrt{6}-\sqrt{2}}{4}\\
-\sin\frac{5π}{12} &= \frac{\sqrt{6}+\sqrt{2}}{4}\\
-\sin\frac{7π}{12} &= \frac{\sqrt{6}+\sqrt{2}}{4}\\
-\sin\frac{11π}{12} &= \frac{\sqrt{6}-\sqrt{2}}{4}\\
+\sin\frac{  π}{12} &= \frac{1}{4}(\sqrt{6}-\sqrt{2})\\
+\sin\frac{ 5π}{12} &= \frac{1}{4}(\sqrt{6}+\sqrt{2})\\
+\sin\frac{ 7π}{12} &= \frac{1}{4}(\sqrt{6}+\sqrt{2})\\
+\sin\frac{11π}{12} &= \frac{1}{4}(\sqrt{6}-\sqrt{2})\\
 \end{aligned}
 $$
 
